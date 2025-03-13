@@ -10,8 +10,9 @@ export default function Home() {
         <div className="container">
             <Button/>
 
+
             <div className="imagem-homepage">
-                <img src={Doctor} alt="Imagem ilustrativa home page" />
+                
             </div>
 
             <div className="grid-container">
@@ -42,6 +43,7 @@ export default function Home() {
                 &copy; TODOS OS DIREITOS RESERVADOS
             </div>
         </div>
+
 
 
     )
