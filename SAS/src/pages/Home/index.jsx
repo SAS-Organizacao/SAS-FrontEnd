@@ -9,13 +9,10 @@ export default function Home() {
 
         <div className="container">
             <Button/>
-<<<<<<< HEAD
-            {/* <h1>Screen HomePage</h1> */}
-        </>
-=======
+
 
             <div className="imagem-homepage">
-                <img src={Doctor} alt="Imagem ilustrativa home page" />
+                
             </div>
 
             <div className="grid-container">
@@ -48,6 +45,6 @@ export default function Home() {
         </div>
 
 
->>>>>>> a34a6186f81db0a08868a0705d649c7d4b07e35a
+
     )
 }

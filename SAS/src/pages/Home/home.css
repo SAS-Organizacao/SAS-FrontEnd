@@ -8,7 +8,7 @@
 }
 
 .navbar {
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -151,6 +151,11 @@ a:hover::after{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    background-image: url('../../assets/images/doctor-homepage.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
 
 .footer {

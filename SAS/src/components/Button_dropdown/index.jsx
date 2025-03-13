@@ -1,7 +1,9 @@
 import { useState } from "react"
 import Login from "../../pages/Login/index"
+import { useNavigate } from "react-router"
 
 export default function Button_dropdown() {
+    const navigation = useNavigate()
 
     const [isOpen, setIsOpen] = useState (false)
 
@@ -17,7 +19,7 @@ export default function Button_dropdown() {
             
             {isOpen && (
                 <ul className="dropdown-menu">
-                    <li className="dropdown-item">Paciente</li>
+                    <li className="dropdown-item" onClick={() => navigation('/login')}>Paciente</li>
                     <li className="dropdown-item">Médico</li>
                     <li className="dropdown-item">Posto parceiro</li>
                 </ul>
