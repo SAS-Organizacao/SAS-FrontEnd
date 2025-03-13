@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { Component } from 'react'
 import './App.css'
+import Home from './pages/Home'
+import Login from './pages/Login'
 
 function App() {
-  
 
   return (
-   <>
-    <h1>Olá, mundo!</h1>
-   </>
+    <>
+      <Home /> 
+      <Login /> 
+    </>
   )
 }
 
 export default App
+

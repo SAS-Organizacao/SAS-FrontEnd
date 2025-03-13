@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #004B54;
+}
+
+.container-content {
+    background-color: #fff;
+    width: 1261px;
+    height: 671px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 500px;
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    padding: 80px 80px;
+    
+}
+
+#adp {
+    text-align: center;
+    background-color: blue;
+    padding: 0;
+}
+
+.login, p {
+    margin: 5px 0 10px 0;
+}
