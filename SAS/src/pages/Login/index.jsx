@@ -1,7 +1,18 @@
 import Button from '../../components/Navbar'
 import './login.css'
+import { useNavigate } from "react-router"
+import { useState } from "react";
 
 export default function Login() {
+
+    const navigation = useNavigate()
+
+    const [isOpen, setIsOpen] = useState (false)
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <>
             <Button/>
@@ -20,7 +31,7 @@ export default function Login() {
                         <input id='senha' type="text" placeholder="Digite sua senha" />
                         <p><a href="">Esqueci minha senha</a></p>
                         <button>Entrar</button>
-                        <h4>Não tem uma conta? <a href="">Cadastre-se</a></h4>
+                        <h4>Não tem uma conta? <a href="" onClick={() => navigation('/cadastro')}>Cadastre-se</a></h4>
 
                     </div>
                 </div>
