@@ -6,16 +6,16 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    height: 100vh; 
     background-color: #004B54;
 }
 
 .container-content {
     background-color: #fff;
     width: 1000px;
-    height: 586px;
+    height: 584px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
@@ -47,6 +47,7 @@
     background-color: #eaeaea;
     border: 1px solid #d9d9d9;
     margin-bottom: 10px;
+    border-radius: 2px;
 
 }
 
@@ -56,6 +57,7 @@
         background-color: #eaeaea;
         border: 1px solid #d9d9d9;
         margin-bottom: 10px;
+        border-radius: 2px;
 }
 
 .imgForm {
@@ -96,7 +98,26 @@
     cursor: pointer;
     margin: 30px 0 ;
     border: none;
-    border-radius: 24px;
+    border-radius: 24px;  
+}
 
-    
+.detalhe_login {
+    background-color: #1E94A2;
+    width: 300px;
+    height: 100px;
+    border-radius: 0 0 0 100px;
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+.detalhe_login2 {
+    background-color: #1E94A2;
+    width: 300px;
+    height: 100px;
+    border-radius: 0 100px 0 0;
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+
 }
