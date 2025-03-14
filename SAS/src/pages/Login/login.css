@@ -77,18 +77,14 @@
     font-size: 14px;
 }
 
-#ems a {
-    color: #000;
-
-}
 
 #ntc {
     text-align: center;
 }
 
-#ntc a {
+/* #ntc {
     color: #000
-}
+} */
 
 #button_login {
     font-size: 18px;

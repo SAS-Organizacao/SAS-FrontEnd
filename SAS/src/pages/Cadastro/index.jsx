@@ -4,7 +4,6 @@ import { useState } from 'react'
 import LogoCadastro from '../../assets/images/logo-sas.svg'
 import CadastroImg from '../../assets/images/cadastro-img.svg'
 
-
 export default function Cadastro() {
     
         const [formData, setFormData] = useState({ 
@@ -33,7 +32,6 @@ export default function Cadastro() {
             }
             console.log(formData)
         }
-
 
     return (
         <div className="containerCadastro">
@@ -130,9 +128,7 @@ export default function Cadastro() {
                 </div>
                 <button type='submit'> Cadastrar </button>
                 <p> Já possui uma conta? <a href='/entrar'>Entrar</a> </p>
-
             </form>
-
         </div>
     )
 }

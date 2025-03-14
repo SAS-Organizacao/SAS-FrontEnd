@@ -14,10 +14,10 @@ export default function Button() {
                 <h2>SAS</h2>
             </div>
             <div className="nav-buttons">
-                <a href="#">Home</a>
-                <a href="#">Sobre</a>
-                <a href="#">Serviços</a>
-                <a href="#">Contato</a>
+                <a className="btn-navbar" href="#">Home</a>
+                <a className="btn-navbar" href="#">Sobre</a>
+                <a className="btn-navbar" href="#">Serviços</a>
+                <a className="btn-navbar" href="#">Contato</a>
                 <Button_dropdown />
             </div>
         </div>
