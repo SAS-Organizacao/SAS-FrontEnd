@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -8,29 +14,89 @@
 
 .container-content {
     background-color: #fff;
-    width: 1261px;
-    height: 671px;
+    width: 1000px;
+    height: 586px;
     border-radius: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
 }
 
 .login {
-    width: 500px;
-    background-color: #000;
-    color: #fff;
-    text-align: left;
-    padding: 80px 80px;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    /* text-align:left; */
+    padding: 30px 90px; 
     
 }
 
 #adp {
     text-align: center;
-    background-color: blue;
-    padding: 0;
+    padding: 20px 0 50px 0;
 }
 
-.login, p {
-    margin: 5px 0 10px 0;
+#amc {
+    text-align:left;
+    margin: 0 0 10px 0
+}
+
+#email {
+    width: 100%;
+    padding: 6.8px;
+    background-color: #eaeaea;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+
+}
+
+#senha {
+        width: 100%;
+        padding: 6.8px;
+        background-color: #eaeaea;
+        border: 1px solid #d9d9d9;
+        margin-bottom: 10px;
+}
+
+.imgForm {
+    width: 50%;
+}
+
+.logo_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ems {
+    text-align: right;
+    margin: 5 0 10 0;
+    font-size: 14px;
+}
+
+#ems a {
+    color: #000;
+
+}
+
+#ntc {
+    text-align: center;
+}
+
+#ntc a {
+    color: #000
+}
+
+#button_login {
+    font-size: 18px;
+    padding: 5px 133px;
+    background-color: #1E94A2;
+    color: #fff;
+    cursor: pointer;
+    margin: 30px 0 ;
+    border: none;
+    border-radius: 24px;
+
+    
 }
