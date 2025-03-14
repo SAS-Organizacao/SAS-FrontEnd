@@ -2,7 +2,6 @@ import '../Cadastro/cadastro.css'
 import Navbar from '../../components/Navbar'
 import { useState } from 'react'
 
-
 export default function Cadastro() {
     
         const [formData, setFormData] = useState({ 
@@ -31,7 +30,6 @@ export default function Cadastro() {
             }
             console.log(formData)
         }
-
 
     return (
 
@@ -119,9 +117,7 @@ export default function Cadastro() {
                 </div>
                 <button type='submit'> Cadastrar </button>
                 <p> Já possui uma conta? <a href='/entrar'>Entrar</a> </p>
-
             </form>
-
         </div>
     )
 }

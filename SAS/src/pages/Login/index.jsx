@@ -1,11 +1,11 @@
 import Button from '../../components/Navbar'
-import './login.css'
-import { useNavigate } from "react-router"
 import Logo from '../../assets/images/logo-sas.svg'
 import Img_login from '../../assets/images/imagem-login.svg'
+
+import { Navigate, useNavigate } from "react-router"
 import { useState } from "react";
 
-
+import './login.css'
 
 export default function Login() {
 
@@ -20,8 +20,8 @@ export default function Login() {
         <>
             <Button/>
             <section className="container">
-            <div className='detalhe_login'></div>
-            <div className='detalhe_login2'></div>
+                <div className='detalhe_login'></div>
+                <div className='detalhe_login2'></div>
                 <div className='container-content'>
                     <img className='imgForm' src={Img_login} alt="" />
                     <div className="login">
@@ -37,7 +37,7 @@ export default function Login() {
                             <input id='senha' type="password" placeholder="Digite sua senha" />
                             <p id='ems'><a href="">Esqueci minha senha</a></p>
                             <button id='button_login'>Entrar</button>
-                            <h4 id='ntc'>Não tem uma conta? <a href="">Cadastre-se</a></h4>
+                            <p id='ntc'>Não tem uma conta? <a href="" onClick={() => navigation('/cadastro')}>Cadastre-se</a></p>
                         </form>
                     </div>
                 </div>
