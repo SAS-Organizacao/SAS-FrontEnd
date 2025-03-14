@@ -1,6 +1,8 @@
 import Button from '../../components/Navbar'
 import './login.css'
 
+
+
 export default function Login() {
     return (
         <>
@@ -21,7 +23,6 @@ export default function Login() {
                         <p><a href="">Esqueci minha senha</a></p>
                         <button>Entrar</button>
                         <h4>Não tem uma conta? <a href="">Cadastre-se</a></h4>
-
                     </div>
                 </div>
 
