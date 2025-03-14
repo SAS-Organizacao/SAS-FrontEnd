@@ -1,6 +1,8 @@
 import '../Cadastro/cadastro.css' 
 import Navbar from '../../components/Navbar'
 import { useState } from 'react'
+import LogoCadastro from '../../assets/images/logo-sas.svg'
+import CadastroImg from '../../assets/images/cadastro-img.svg'
 
 
 export default function Cadastro() {
@@ -34,9 +36,18 @@ export default function Cadastro() {
 
 
     return (
-
         <div className="containerCadastro">
             <Navbar/>
+
+            <div className='logoCadastro'>
+                <img src={LogoCadastro}/>
+            </div>
+
+            <h1>Paciente Cadastre-se</h1>
+
+            <div className='cadastro-img'>
+                <img src={CadastroImg}/>
+            </div>
             
             <form onSubmit={handleSubmit}>
                 <div>
