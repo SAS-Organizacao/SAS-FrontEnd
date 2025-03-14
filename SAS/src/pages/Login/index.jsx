@@ -3,22 +3,27 @@ import './login.css'
 import { useNavigate } from "react-router"
 import Logo from '../../assets/images/logo-sas.svg'
 import Img_login from '../../assets/images/imagem-login.svg'
+import { useState } from "react";
 
 export default function Login() {
-    
+
+    const navigation = useNavigate()
+
+    const [isOpen, setIsOpen] = useState (false)
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen)
+    }
     return (
         <>
             <Button/>
             <section className="container">
                 <div className='container-content'>
                     <img className='imgForm' src={Img_login} alt="" />
-
                     <div className="login">
-
                         <div className='logo_login'>
                             <img src={Logo} alt="" width={57.75} height={66}/>
                         </div>
-
                         <form action="">
                             <h2 id='adp'>Área do Paciente</h2>
                             <h3 id='amc'>Acessar a minha conta</h3>
@@ -30,10 +35,8 @@ export default function Login() {
                             <button id='button_login'>Entrar</button>
                             <h4 id='ntc'>Não tem uma conta? <a href="">Cadastre-se</a></h4>
                         </form>
-
                     </div>
                 </div>
-
             </section>
         </>
     )
