@@ -93,3 +93,40 @@
 .section-02 {
     display: flex;
 }
+
+.homepage-status {
+    padding: 10px;
+    flex: 1;
+    width: 50%;
+    /* background-color: tomato; */
+}
+
+.text-column {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-ajuda {
+    margin-top: 38px;
+    flex: 1;
+    width: 50%;
+    /* background-color: #555; */
+}
+
+.stats {
+    margin: 20px 300px;
+    display: flex;
+    gap: 130px;
+}
+
+.numbers-stats {
+    /* background-color: #555; */
+    margin-top: 60px;
+    display: flex;
+    gap: 90px;
+}
+
+.numbers-stats p {
+    font-size: 12px;
+}
+

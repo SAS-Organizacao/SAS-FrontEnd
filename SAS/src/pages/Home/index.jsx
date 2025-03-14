@@ -1,10 +1,10 @@
 import Button from "../../components/Navbar";
 import '../Home/home.css'
-import Doctor from "../../assets/images/doctor-homepage.svg"
 import Bookicon from "../../assets/images/icon-book.svg"
 import Homeicon from "../../assets/images/icon-home.svg"
 import Bookicon_02 from "../../assets/images/icon-book_02.svg"
 import Footer from "../../components/Footer";
+import Personicon from "../../assets/images/icon-person.svg"
 
 
 export default function Home() {
@@ -33,6 +33,55 @@ export default function Home() {
                 <div className="grid-item">
                     <img src={Bookicon_02} alt="" width={57.75} height={66}/>
                     <p>Acesse seu<br />prontuário digital</p>
+                </div>
+            </div>
+
+            {/* seção 02 */}
+
+            <div className="stats">
+                <div className="homepage-status">
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
+                        <h4>Busca de paciente por CPF</h4>
+                    </div>
+
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
+                        <h4>Busca de paciente por CPF</h4>
+                    </div>
+
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
+                        <h4>Busca de paciente por CPF</h4>
+                    </div>
+                </div>
+
+                <div className="homepage-ajuda">
+                    <div className="ajuda">
+                        <h2>Em que nós podemos ajudar?</h2>
+                        <p>
+                            Nosso compromisso é oferecer soluções personalizadas <br /> 
+                            e eficientes, garantindo mais praticidade e inovação <br />
+                            para o seu atendimento.
+                        </p>
+                        <br />
+                        <p>
+                            Com uma abordagem centrada no paciente, trabalhamos <br />
+                            para otimizar processos e proporcionar uma experiência <br /> mais ágil e acessível.
+                        </p>
+
+                        <div className="numbers-stats">
+                            <div>
+                                <h1>285+</h1>
+                                <p>Paciente agendados</p>
+                            </div>
+                            <div>
+                                <h1>285+</h1>
+                                <p>Paciente agendados</p>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
 
