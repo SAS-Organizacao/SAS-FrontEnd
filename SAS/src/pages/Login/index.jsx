@@ -2,7 +2,7 @@ import Button from '../../components/Navbar'
 import './login.css'
 import { useNavigate } from "react-router"
 import Logo from '../../assets/images/logo-sas.svg'
-import Img from '../../assets/images/imagem-login.svg'
+import Img_login from '../../assets/images/imagem-login.svg'
 
 export default function Login() {
     
@@ -11,7 +11,7 @@ export default function Login() {
             <Button/>
             <section className="container">
                 <div className='container-content'>
-                    <img className='imgForm' src={Img} alt="" />
+                    <img className='imgForm' src={Img_login} alt="" />
 
                     <div className="login">
 
