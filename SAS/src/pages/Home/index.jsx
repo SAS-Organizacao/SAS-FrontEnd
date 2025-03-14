@@ -38,12 +38,49 @@ export default function Home() {
 
             {/* seção 02 */}
 
-            <div className="homePage-status">
-                <div className="infos">
-                    <div className="infos-item">
-                        <img src={Personicon} alt="" />
+            <div className="stats">
+                <div className="homepage-status">
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
                         <h4>Busca de paciente por CPF</h4>
-                        <p>texto</p>
+                    </div>
+
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
+                        <h4>Busca de paciente por CPF</h4>
+                    </div>
+
+                    <div className="text-column">
+                        <img className="person-icon" src={Personicon} alt="" />
+                        <h4>Busca de paciente por CPF</h4>
+                    </div>
+                </div>
+
+                <div className="homepage-ajuda">
+                    <div className="ajuda">
+                        <h2>Em que nós podemos ajudar?</h2>
+                        <p>
+                            Nosso compromisso é oferecer soluções personalizadas <br /> 
+                            e eficientes, garantindo mais praticidade e inovação <br />
+                            para o seu atendimento.
+                        </p>
+                        <br />
+                        <p>
+                            Com uma abordagem centrada no paciente, trabalhamos <br />
+                            para otimizar processos e proporcionar uma experiência <br /> mais ágil e acessível.
+                        </p>
+
+                        <div className="numbers-stats">
+                            <div>
+                                <h1>285+</h1>
+                                <p>Paciente agendados</p>
+                            </div>
+                            <div>
+                                <h1>285+</h1>
+                                <p>Paciente agendados</p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
