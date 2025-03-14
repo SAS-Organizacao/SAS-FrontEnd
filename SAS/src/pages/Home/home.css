@@ -30,8 +30,8 @@
 
 .grid-item {
     /* margin-top: 40px; */
-    width: 415px;
-    height: 250px;
+    width: 300px;
+    height: 240px;
     background-color: #fff;
     padding: 20px;
     text-align: center;
@@ -42,9 +42,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
-.footer {
-    text-align: center;
-}
 
 .secao_02 {
     padding: 20px;
@@ -102,21 +99,33 @@
 }
 
 .text-column {
+    gap: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+}
+
+.text-column p {
+    font-weight: 400;
+    font-size: 1.3em;
 }
 
 .homepage-ajuda {
     margin-top: 38px;
     flex: 1;
     width: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
     /* background-color: #555; */
+    line-height: 1.6;
 }
 
 .stats {
     margin: 20px 300px;
     display: flex;
-    gap: 130px;
+    gap: 10px;
 }
 
 .numbers-stats {
@@ -127,6 +136,7 @@
 }
 
 .numbers-stats p {
+    color: #505050;
     font-size: 12px;
 }
 

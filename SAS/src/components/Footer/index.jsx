@@ -1,5 +1,6 @@
 import '../Footer/footer.css'
 import Logoicon from "../../assets/images/logo-sas.svg"
+import Envioicon from "../../assets/images/icon-envio.svg"
 
 export default function Footer() {
     
@@ -32,6 +33,7 @@ export default function Footer() {
 
                     <div className='footer-section'>
                         <h5>RECEBA NOVIDADES</h5>
+                        <img src={Envioicon} alt="" width={41}/>
                         <input type="email" placeholder='E-mail'/>
                     </div>
                 </div>

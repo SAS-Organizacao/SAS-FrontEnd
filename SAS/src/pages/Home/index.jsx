@@ -5,6 +5,8 @@ import Homeicon from "../../assets/images/icon-home.svg"
 import Bookicon_02 from "../../assets/images/icon-book_02.svg"
 import Footer from "../../components/Footer";
 import Personicon from "../../assets/images/icon-person.svg"
+import HistoricoMedicoicon from "../../assets/images/icon-medicohistorico.svg"
+import HistoricoIcon from "../../assets/images/icon-historico.svg"
 
 
 export default function Home() {
@@ -41,18 +43,18 @@ export default function Home() {
             <div className="stats">
                 <div className="homepage-status">
                     <div className="text-column">
-                        <img className="person-icon" src={Personicon} alt="" />
-                        <h4>Busca de paciente por CPF</h4>
+                        <img className="person-icon" src={Personicon} alt="" width={100} height={100}/>
+                        <p>Busca de paciente por CPF</p>
                     </div>
 
                     <div className="text-column">
-                        <img className="person-icon" src={Personicon} alt="" />
-                        <h4>Busca de paciente por CPF</h4>
+                        <img className="person-icon" src={HistoricoMedicoicon} alt="" width={100} height={100}/>
+                        <p>Busca de paciente por CPF</p>
                     </div>
 
                     <div className="text-column">
-                        <img className="person-icon" src={Personicon} alt="" />
-                        <h4>Busca de paciente por CPF</h4>
+                        <img className="person-icon" src={HistoricoIcon} alt="" width={100} height={100}/>
+                        <p>Busca de paciente por CPF</p>
                     </div>
                 </div>
 
