@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.containerCadastro{
+.containerCadastro {
     display: flex;
     justify-content:center;
     align-items:center;
@@ -12,7 +12,7 @@
     background-color: #004B54;
 }
 
-.cadastroContent{
+.cadastroContent {
     background-color: #fff;
     width: 1200px;
     height: 584px;
@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 
-.formContent{
+.formContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,22 +33,25 @@
     /* background-color: tomato; */
 }
 
-.formsContents{
+.formsContents {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 550px;
+    position: relative;
+    top: -60px;
+    right: -45px;
 
 }
 
-.contentForm{
+.contentForm {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width: 100%;
 }
 
-.inputContent{
+.inputContent {
     width: 100%;
     padding: 6.8px;
     background-color: #eaeaea;
@@ -57,31 +60,70 @@
     border-radius: 2px;
 }
 
-.logoCadastro{
+.logoCadastro {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 200px; 
-    position: absolute;
-    top: 300px;
-
+    position: relative;
+    top: -80px;
+    right: -45px;
 }
 
-.logoCadastro img{
+.logoCadastro img {
     width: 50%;
     height: 100%;
     color: #000;  
 }
 
-.formContent h2{
-    padding: 10px 0;
+.formContent h2 {
+    position: relative;
+    top: -75px;
+    right: -45px;
 }
 
-.imgCadastro{
+.imgCadastro {
     width: 50%;
     position: relative;
-    right: -40px;
+    right: -35px;
     top: -10px;
 }
 
- 
+.btn-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -120px;
+    left: -150px;
+}
+
+.btn-cadastro a {
+    background-color: #1E94A2;
+    border-radius: 24px;
+    padding: 10px 90px;
+    color: #fff;
+    text-decoration: none; 
+    transition: background-color 0.5s ease;
+}
+
+.btn-cadastro a:hover {
+    background-color: #125E67;
+}
+
+/* .checkbox-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+    position: relative;
+    bottom: -80px;
+    left: -300px;
+    width: 300px;    
+}
+
+.checkbox-content, p, a{
+    display: flex;
+    color: #000;
+    font-size: 12px;
+}     */

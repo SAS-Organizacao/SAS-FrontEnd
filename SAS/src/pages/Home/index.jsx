@@ -82,7 +82,6 @@ export default function Home() {
                                 <p>Paciente agendados</p>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
