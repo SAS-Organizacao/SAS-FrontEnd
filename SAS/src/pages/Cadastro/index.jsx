@@ -11,16 +11,13 @@ export default function Cadastro() {
             <Button/>
 
             <div className="containerCadastro">
-            
-                
+                            
                 <div className='cadastroContent'>
 
-                    
                     <form className='formContent'>
                         
-
                         <div className='logoCadastro'>
-                            <img src={LogoCadastro}></img>
+                            <img src={LogoCadastro} alt='logo-symbol'></img>
                         </div>
 
                         <h2>Paciente - Cadastre-se</h2>
@@ -52,9 +49,15 @@ export default function Cadastro() {
                                 <input type='password' className='inputContent' placeholder='Confirme sua senha'></input>
                             </div>
 
-                            
+                            {/* <div className='checkbox-content'>
+                                <input type="checkbox" />
+                                <p>Estou de acordo com a <link rel="stylesheet" onClick={() => navigation('/login')} /> De</p>
+                            </div> */}
 
-
+                            <div className='btn-cadastro'>
+                                <a href="">Cadastrar</a>
+                            </div>
+                        
                         </div>
                     </form>
                     
