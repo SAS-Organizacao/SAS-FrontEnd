@@ -4,13 +4,84 @@
     box-sizing: border-box;
 }
 
-.logoCadastro {
+.containerCadastro{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh; 
+    background-color: #004B54;
+}
+
+.cadastroContent{
+    background-color: #fff;
+    width: 1200px;
+    height: 584px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    row-gap: 10px;
+    /* background-color: tomato; */
+}
+
+.formsContents{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: 550px;
+
+}
+
+.contentForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.inputContent{
+    width: 100%;
+    padding: 6.8px;
+    background-color: #eaeaea;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.logoCadastro{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    width: 200px; 
+    position: absolute;
+    top: 300px;
+
 }
 
-.h1 {
-    
+.logoCadastro img{
+    width: 50%;
+    height: 100%;
+    color: #000;  
 }
+
+.formContent h2{
+    padding: 10px 0;
+}
+
+.imgCadastro{
+    width: 50%;
+    position: relative;
+    right: -40px;
+    top: -10px;
+}
+
+ 
