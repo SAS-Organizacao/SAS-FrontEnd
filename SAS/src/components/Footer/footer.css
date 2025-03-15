@@ -74,9 +74,10 @@
 }
 
 .footer-section img {
-  position: absolute;
-  bottom: -924.2px;
-  right: 197px;
+  position: relative;
+  bottom: -52.4px;
+  right: -102.9px;
+
 }
 
 .footer-down {
