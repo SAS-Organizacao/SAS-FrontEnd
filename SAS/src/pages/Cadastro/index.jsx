@@ -54,14 +54,14 @@ export default function Cadastro() {
                                 <p>Estou de acordo com a <link rel="stylesheet" onClick={() => navigation('/login')} /> De</p>
                             </div> */}
 
-                            <div className='btn-cadastro'>
+                            <div className='buttonCadastro'>
                                 <a href="">Cadastrar</a>
                             </div>
                         
                         </div>
                     </form>
                     
-                    <img src={CadastroImg} className='imgCadastro' width={1338.41} height={710}></img>
+                    <img src={CadastroImg} className='imgCadastro'></img>
 
                 </div>
             </div>
