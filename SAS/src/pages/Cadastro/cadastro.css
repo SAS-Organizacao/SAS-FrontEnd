@@ -13,6 +13,7 @@
 }
 
 .cadastroContent {
+    /* border: 1px solid red; */
     background-color: #fff;
     width: 1200px;
     height: 584px;
@@ -23,6 +24,7 @@
 }
 
 .formContent {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,13 +36,15 @@
 }
 
 .formsContents {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* border: 1px solid red; */
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
     width: 550px;
-    position: relative;
+    padding: 20px;
+    /* position: relative;
     top: -60px;
-    right: -45px;
+    right: -45px; */
 
 }
 
@@ -65,9 +69,9 @@
     justify-content: center;
     align-items: center;
     width: 200px; 
-    position: relative;
+    /* position: relative;
     top: -80px;
-    right: -45px;
+    right: -45px; */
 }
 
 .logoCadastro img {
@@ -76,11 +80,11 @@
     color: #000;  
 }
 
-.formContent h2 {
+/* .formContent h2 {
     position: relative;
     top: -75px;
     right: -45px;
-}
+} */
 
 .imgCadastro {
     width: 50%;
@@ -93,9 +97,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative;
     bottom: -120px;
-    left: -150px;
+    left: -150px; */
 }
 
 .btn-cadastro a {
@@ -111,19 +115,31 @@
     background-color: #125E67;
 }
 
-/* .checkbox-content {
+.checkbox-content {
     display: flex;
-    align-items: center;
-    gap: 30px;
-    margin: 0;
-    position: relative;
-    bottom: -80px;
-    left: -300px;
-    width: 300px;    
+    gap: 5px;
+    /* position: relative;
+    bottom: -412px;
+    left: -504px;  */
+    width: 100%;
+    /* max-width: 400px; */
+    /* border: 1px solid red; */
+    padding: 10px;;
+    text-align: left;
+    
 }
 
-.checkbox-content, p, a{
-    display: flex;
+.checkbox-content {
     color: #000;
     font-size: 12px;
-}     */
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+#possui-conta {
+    text-align: center;
+    margin: 12px;
+}

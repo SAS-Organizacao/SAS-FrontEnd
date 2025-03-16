@@ -10,12 +10,12 @@ export default function Button() {
     return (
         <div className="navbar">
             <div className="logo">
-                <img src={Logo} alt="" />
+                <img src={Logo} alt=""/>
                 <h2>SAS</h2>
             </div>
             <div className="nav-buttons">
-                <a className="btn-navbar" href="#">Home</a>
-                <a className="btn-navbar" href="#">Sobre</a>
+                <a className="btn-navbar" href="/">Home</a>
+                <a className="btn-navbar" href="/login">Sobre</a>
                 <a className="btn-navbar" href="#">Serviços</a>
                 <a className="btn-navbar" href="#">Contato</a>
                 <Button_dropdown />
