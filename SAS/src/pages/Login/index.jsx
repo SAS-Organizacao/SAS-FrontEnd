@@ -31,7 +31,7 @@ export default function Login() {
                         <form action="">
                             <h2 id='adp'>Área do Paciente</h2>
                             <h3 id='amc'>Acessar a minha conta</h3>
-                            <label htmlFor="email">E-mail:</label><br />
+                            <label>E-mail:</label><br />
                             <input id='email' type="e-mail" placeholder="Digite seu e-mail" /><br />
                             <label htmlFor="senha">Senha:</label><br />
                             <input id='senha' type="password" placeholder="Digite sua senha" />
