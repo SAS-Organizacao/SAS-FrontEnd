@@ -11,14 +11,18 @@ export default function Login() {
 
     const navigation = useNavigate()
 
-    const [isOpen, setIsOpen] = useState (false)
+    const [isOpen, setIsOpen] = useState(false)
 
-    const toggleMenu = () => {
+    // const toggleMenu = () => {
+    //     setIsOpen(!isOpen)
+    // }
+
+    const togglePasswordReset = () => {
         setIsOpen(!isOpen)
     }
     return (
         <>
-            <Button/>
+            <Button />
             <section className="container">
                 <div className='detalhe_login'></div>
                 <div className='detalhe_login2'></div>
@@ -26,7 +30,7 @@ export default function Login() {
                     <img className='imgForm' src={Img_login} alt="" />
                     <div className="login">
                         <div className='logo_login'>
-                            <img src={Logo} alt="" width={57.75} height={66}/>
+                            <img src={Logo} alt="" width={57.75} height={66} />
                         </div>
                         <form action="">
                             <h2 id='adp'>Área do Paciente</h2>
@@ -38,6 +42,7 @@ export default function Login() {
                             <p id='ems'><a href="">Esqueci minha senha</a></p>
                             <button id='button_login'>Entrar</button>
                             <p id='ntc'>Não tem uma conta? <a href="" onClick={() => navigation('/cadastro')}>Cadastre-se</a></p>
+
                         </form>
                     </div>
                 </div>
