@@ -4,11 +4,11 @@
   background-color: #1E94A2;
   left: 0;
   top: 0;
-  padding: 20px;
+  padding: 40px;
 }
 
 .btn_lateral {
-  font-size: 20px;
+  font-size: 18px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -76,7 +76,7 @@ img {
 
 .menu-baixo {
     /* border: 1px solid red; */
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     gap: 40px;

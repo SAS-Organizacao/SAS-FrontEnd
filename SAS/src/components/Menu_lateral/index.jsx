@@ -40,7 +40,7 @@ export default function Menulateral() {
 
                     <div className="menu-column">
                         <img src={Imgresultado} alt="" width={31} />
-                        <a href="">Resultado exame</a>
+                        <a href="">Resultado de exame</a>
                     </div>
 
                     <div className="menu-column">
@@ -50,7 +50,7 @@ export default function Menulateral() {
                     
                    
                    <div className="menu-baixo">
-                    
+
                         <div className="menu-baixo-column">
                             <img src={Imgsegurança} alt="" width={31} />
                             <a href="">Segurança</a>
