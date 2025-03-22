@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router"
 import { useState } from "react"
-// import Menulateral from '../../components/Menu_lateral'
-// import Button from '../../components/Navbar'
+import Menulateral from '../../components/Menu_lateral'
+import Button from '../../components/Navbar'
 import './agendarconsulta.css'
 
 
 export default function Agendarconsulta() {
-    // const navigation = useNavigate()
+    const navigation = useNavigate()
 
     // const [isOpen, setIsOpen] = useState(false)
 
@@ -20,8 +20,8 @@ export default function Agendarconsulta() {
 
     return (
         <>
-            {/* <Button />
-            <Menulateral /> */}
+            <Button />
+            <Menulateral />
 
             <div className="agendar-consulta">
                 <div className="agendar-medicos">
@@ -42,7 +42,7 @@ export default function Agendarconsulta() {
 
                     <div>
                         <h3>Selecione a UBS de sua preferência</h3>
-                        <button className="dropdown-agendar" onClick={toggleMenu}>
+                        <button className="dropdown-agendar">
                             Unidade Básica de Saúde
                         </button>
 
