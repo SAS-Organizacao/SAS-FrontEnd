@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.paragrafo {
+    position: absolute;
+    left: 900px;
+    bottom: 300px;
+    color: #808080;
+    font-size: 20px;
+}
