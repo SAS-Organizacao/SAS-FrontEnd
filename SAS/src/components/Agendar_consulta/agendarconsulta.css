@@ -1,0 +1,43 @@
+.agendar-consulta {
+    /* width: 1339.8px; */
+    width: 77%;
+    height: 500px;
+    display: flex;
+    padding: 50px;
+    background-color: aqua;
+    justify-content: space-between;
+    position: relative;
+    left: 385px;
+    bottom: 660px;
+}
+
+.agendar-medicos {
+    background-color: #D2D1D1;
+    width: 600px;
+    padding: 70px 50px;
+    border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
+}
+
+.agendar-data {
+    background-color: rgb(220, 220, 120);
+    width: 400px;
+
+}
+
+.especialidades {
+    padding: 0 0 40px 0;
+}
+
+.dropdown-agendar {
+    padding: 10px;
+    width: 40vh;
+    font-size: 15px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    color: #979797;
+    background-color: #fff;
+}
