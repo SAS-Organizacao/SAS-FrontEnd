@@ -5,12 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import Cadastro from './pages/Cadastro'
 import Menu_lateral from './components/Menu_lateral'
 import Agendar_consulta from './components/Agendar_consulta'
-<<<<<<< HEAD
 import Perfil from './pages/Perfil'
-=======
 import Barra from './components/Barra'
-
->>>>>>> eaec1fdb967503e7ff3a1609972779231f43cd49
 
 
 function App() {
@@ -29,12 +25,9 @@ function App() {
 
         <Route path='/agendarconsulta' element={<Agendar_consulta />}></Route>
 
-<<<<<<< HEAD
         <Route path='/perfil' element={<Perfil />}></Route>
-=======
-        <Route path='/barra' element={<Barra/>} ></Route>
 
->>>>>>> eaec1fdb967503e7ff3a1609972779231f43cd49
+        <Route path='/barra' element={<Barra/>} ></Route>
 
       </Routes>
     </BrowserRouter>
