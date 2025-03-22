@@ -49,46 +49,24 @@ export default function Cadastro() {
                                     <input type='password' className='inputContent' placeholder='Confirme sua senha'></input>
                                 </div>
                             </div>
-
-                            <div  className='contentForm'>
-                                <label htmlFor='cpf'>CPF</label>
-                                <input type='text' className='inputContent' placeholder='000.000.000-00'></input>
-                            </div>
-
-                            <div  className='contentForm'>
-                                <label htmlFor='emailCadastro'>E-mail</label>
-                                <input type='email' className='inputContent' placeholder='exemplo@gmail.com'></input>
-                            </div>
-
-                            <div  className='contentForm'>
-                                <label htmlFor='senhaCadastro'>Senha</label>
-                                <input type='password' className='inputContent' placeholder='Digite sua senha'></input>
-                            </div>
-
-                            <div  className='contentForm'>
-                                <label htmlFor='confirmarSenha'>Confirme sua senha</label>
-                                <input type='password' className='inputContent' placeholder='Confirme sua senha'></input>
-                            </div>
-
-                            {/* <div className='checkbox-content'>
-                                <input type="checkbox" />
-                                <p>Estou de acordo com a <link rel="stylesheet" onClick={() => navigation('/login')} /> De</p>
-                            </div> */}
-
-                            <div className='buttonCadastro'>
-                                <a href="">Cadastrar</a>
-
+                            
+                        <div className='checkbox-content'>
+                            <input type="checkbox" />
+                            <p>Estou de acordo com a <a href="">Politica de Privacidade</a> <link  rel="stylesheet" onClick={() => navigation('/login')} /></p>
+                        </div>
+                    
+                            <div className='btn-cadastro'>
+                                <a id='button-cadastro' href="">Cadastrar</a>
                             </div>
                             
                             <p id='possui-conta'>Já possui conta? <a  href="/login">Entrar</a></p>
                         </div>
                     </form>
-                    
-                    <img src={CadastroImg} className='imgCadastro'></img>
 
+                    <img src={CadastroImg} className='imgCadastro' width={1338.41} height={710}></img>
 
                 </div>
             </div>
-        </>
-    )
+        </>
+    )
 }
