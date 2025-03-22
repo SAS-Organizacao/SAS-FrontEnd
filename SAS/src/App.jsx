@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import Cadastro from './pages/Cadastro'
 import Menu_lateral from './components/Menu_lateral'
 import Agendar_consulta from './components/Agendar_consulta'
+import Barra from './components/Barra'
+
 
 
 function App() {
@@ -22,6 +24,9 @@ function App() {
         <Route path='/menulateral' element={<Menu_lateral />}></Route>
 
         <Route path='/agendarconsulta' element={<Agendar_consulta />}></Route>
+
+        <Route path='/barra' element={<Barra/>} ></Route>
+
 
       </Routes>
     </BrowserRouter>
