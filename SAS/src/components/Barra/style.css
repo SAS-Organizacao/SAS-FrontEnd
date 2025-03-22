@@ -16,6 +16,8 @@
     right: 100px;
     position: absolute;
     height: 100px;
+    top: -40px; 
+    /* Alteração feita no top. */ 
 }
 
 .barra-item {
