@@ -15,6 +15,7 @@ export default function Login() {
 
     const navigation = useNavigate();
 
+
     const [isEmailOpen, setIsEmailOpen] = useState(false);
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isSenhaOpen, setIsSenhaOpen] = useState(false);
@@ -41,6 +42,12 @@ export default function Login() {
         setIsFeedbackOpen(true);
     };
 
+    const [isOpen, setIsOpen] = useState(false)
+    
+    const togglePasswordReset = () => {
+        setIsOpen(!isOpen)
+    }
+
     return (
         <>
             <Button />
@@ -63,6 +70,7 @@ export default function Login() {
                             <p id='ems'><a href="#" onClick={togglePasswordReset}>Esqueci minha senha</a></p>
                             <button id='button_login'>Entrar</button>
                             <p id='ntc'>Não tem uma conta? <a href="" onClick={() => navigation('/cadastro')}>Cadastre-se</a></p>
+
                         </form>
                     </div>
                 </div>
@@ -72,5 +80,10 @@ export default function Login() {
                 {isFeedbackOpen && <Feedback onClose={() => setIsFeedbackOpen(false)} />}
             </section>
         </>
+
     );
 }
+
+    )
+}
+

@@ -1,0 +1,102 @@
+.lateral {
+  width: 385px;
+  height: 956px;
+  background-color: #1E94A2;
+  left: 0;
+  top: 0;
+  padding: 40px;
+}
+
+.btn_lateral {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  text-decoration: none;
+  /* border: 1px solid red ; */
+}
+
+.btn_lateral a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-column {
+    margin: 0;
+    transition: transform 0.5s ease;
+    /* border: 1px solid red; */
+    max-width: 280px;
+    gap: 15px;
+    display: flex;
+}
+
+img {
+    margin-left: 0;
+}
+
+.menu-column::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.menu-column:hover::after {
+    width: 100%;
+}
+
+.btn_lateral, .menu-column:hover {
+    transform: translateY(-3px);
+}
+
+/* efeitos do menu baixo */
+.menu-baixo, .menu-baixo-column:hover {
+    transform: translateY(-3px);
+}
+
+.menu-baixo-column:hover::after {
+    width: 100%;
+}
+
+.menu-baixo-column::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.menu-baixo {
+    /* border: 1px solid red; */
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    text-decoration: none;
+    margin-top: 19rem ;
+}
+
+.menu-baixo-column {
+    margin: 0;
+    transition: transform 0.5s ease;
+    /* border: 1px solid red; */
+    max-width: 280px;
+    gap: 15px;
+    display: flex;
+}
+
+
+
+
+
+
+ 
