@@ -7,6 +7,7 @@ import Menu_lateral from './components/Menu_lateral'
 import Agendar_consulta from './components/Agendar_consulta'
 import Barra from './components/Barra'
 import AreaPaciente from './pages/Area_paciente/areapac'
+import Sobre from './pages/Sobre/sobre'
 
 
 
@@ -29,6 +30,8 @@ function App() {
         <Route path='/barra' element={<Barra/>} ></Route>
 
         <Route path='/areapaciente' element={<AreaPaciente/>} ></Route>
+
+        <Route path='/sobre' element={<Sobre/>} ></Route>
 
 
       </Routes>
