@@ -15,8 +15,8 @@ export default function Button() {
             </div>
             <div className="nav-buttons">
                 <a className="btn-navbar" href="/">Home</a>
-                <a className="btn-navbar" href="/login">Sobre</a>
-                <a className="btn-navbar" href="#">Serviços</a>
+                <a className="btn-navbar" href="#">Sobre</a>
+                <a className="btn-navbar" href="">Serviços</a>
                 <a className="btn-navbar" href="#">Contato</a>
                 <Button_dropdown />
             </div>

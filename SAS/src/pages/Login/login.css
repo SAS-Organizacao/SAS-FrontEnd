@@ -6,10 +6,14 @@
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+
+    justify-content:center;
+    align-items:center;
     height: 100vh;
-    background-color: #004B54;
+    background: url(../../assets/images/plano-de-fundo.svg), no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .container-content {
@@ -74,7 +78,6 @@
     font-size: 14px;
 }
 
-
 #ntc {
     text-align: center;
     font-size: 14px;
@@ -89,26 +92,4 @@
     margin: 30px 0;
     border: none;
     border-radius: 24px;
-}
-
-.detalhe_login {
-    background-color: #1E94A2;
-    width: 300px;
-    height: 100px;
-    border-radius: 0 0 0 100px;
-    position: absolute;
-    top: 110px;
-    right: 0;
-    /* z-index: 1; */
-}
-
-.detalhe_login2 {
-    background-color: #1E94A2;
-    width: 300px;
-    height: 100px;
-    border-radius: 0 100px 0 0;
-    position: absolute;
-    bottom: -110px;
-    left: 0;
-    /* z-index: 1; */
 }

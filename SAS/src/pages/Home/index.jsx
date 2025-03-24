@@ -43,18 +43,18 @@ export default function Home() {
             <div className="stats">
                 <div className="homepage-status">
                     <div className="text-column">
-                        <img className="person-icon" src={Personicon} alt="" width={100} height={100}/>
+                        <img className="person-icon-status" src={Personicon} alt="" width={100} height={100}/>
                         <p>Busca de paciente por CPF</p>
                     </div>
 
                     <div className="text-column">
-                        <img className="person-icon" src={HistoricoMedicoicon} alt="" width={100} height={100}/>
-                        <p>Busca de paciente por CPF</p>
+                        <img className="person-icon-status" src={HistoricoMedicoicon} alt="" width={100} height={100}/>
+                        <p>Hístorico médico</p>
                     </div>
 
                     <div className="text-column">
-                        <img className="person-icon" src={HistoricoIcon} alt="" width={100} height={100}/>
-                        <p>Busca de paciente por CPF</p>
+                        <img className="person-icon-status" src={HistoricoIcon} alt="" width={100} height={100}/>
+                        <p>Histórico integrado com outros postos </p>
                     </div>
                 </div>
 
@@ -78,8 +78,8 @@ export default function Home() {
                                 <p>Paciente agendados</p>
                             </div>
                             <div>
-                                <h1>285+</h1>
-                                <p>Paciente agendados</p>
+                                <h1>190+</h1>
+                                <p>Especialidades no agendamento</p>
                             </div>
                         </div>
                     </div>
@@ -88,6 +88,6 @@ export default function Home() {
 
             <Footer/>
         </div>
-        
+
     )
 }
