@@ -3,7 +3,18 @@ import '../Cadastro/cadastro.css'
 import LogoCadastro from '../../assets/images/logo-sas.svg'
 import CadastroImg from '../../assets/images/cadastro-img.svg'
 
+import { useState } from 'react'
+
 export default function Cadastro() {
+
+    const [nome, setNome] = useState('')
+    
+
+    function pegarNome(e) {
+        e.preventDefault()
+        console.log(nome)
+        alert('Nome cadastrado com sucesso!')
+    }
     
     return (
        
@@ -13,7 +24,7 @@ export default function Cadastro() {
                             
                 <div className='cadastroContent'>
 
-                    <form className='formContent'>
+                    <form className='formContent' onSubmit={pegarNome}>
                         
                         <div className='logoCadastro'>
                             <img src={LogoCadastro} alt='logo-symbol'></img>
@@ -25,8 +36,15 @@ export default function Cadastro() {
 
                             <div className='form-container'>
                                 <div className='contentForm'>
-                                    <label htmlFor='nomeCadastro'>Nome</label>
-                                    <input  type='text' className='inputContent' placeholder='Ex.: Jão Batista da Silva'></input>
+                                    <label htmlFor='nome'>Nome</label>
+                                    <input  
+                                        className='inputContent'
+                                        type='text' 
+                                        id='nome' 
+                                        name='nome'
+                                        placeholder='Ex.: Jão Batista da Silva'
+                                        onChange={(e) => setNome(e.target.value)}
+                                    />
                                 </div>
 
                                 <div  className='contentForm'>
@@ -56,7 +74,7 @@ export default function Cadastro() {
                         </div>
                     
                             <div className='btn-cadastro'>
-                                <a id='button-cadastro' href="">Cadastrar</a>
+                                <button id='button-cadastro' type='submit'>Cadastrar</button>
                             </div>
                             
                             <p id='possui-conta'>Já possui conta? <a  href="/login">Entrar</a></p>
@@ -67,6 +85,6 @@ export default function Cadastro() {
 
                 </div>
             </div>
-        </>
-    )
+        </>
+    )
 }
