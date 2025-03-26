@@ -1,0 +1,45 @@
+.inforesumo {
+  width:600px;
+  height:500px;
+}
+
+.info-paciente {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: #1E94A2 1px solid;
+  margin: 10px 10px
+}
+
+.info h3 {
+  color: #1E94A2;
+}
+
+.info-agendamentos {
+  padding: 20px;
+  border-bottom: #1E94A2 1px solid;
+  margin: 10px 10px
+}
+
+.info-agendamentos img {
+  margin: 0 10px 0 0;
+}
+
+.info-agendamentos h4 {
+  margin: 0 0 10px 0;
+}
+
+.info-obs {
+  padding: 20px;
+  border-bottom: #1E94A2 1px solid;
+  margin: 10px 10px
+}
+
+.info-obs h4 {
+  margin: 0 0 10px 0;
+}
+
+.info-obs img {
+  margin: 0 10px 0 0;
+}
+

@@ -15,6 +15,12 @@ export default function Login() {
 
     const navigation = useNavigate();
 
+    const [isOpen, setIsOpen] = useState(false)
+
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [error, setError] = useState('');
+
     const [isEmailOpen, setIsEmailOpen] = useState(false);
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isSenhaOpen, setIsSenhaOpen] = useState(false);
@@ -39,8 +45,25 @@ export default function Login() {
         setIsSenhaOpen(false);
         setIsFeedbackOpen(true);
     };
-    
 
+    const handleLogin = (e) => {
+        e.preventDefault();
+        console.log(email, senha);
+        if (!email || !senha) {
+            setError('Por favor, preencha todos os campos.');
+        } else {
+            setError('');
+            alert('Login realizado com sucesso!');
+        }
+    };
+
+    // const pegarEmail = (e) => {
+    //     e.preventDefault();
+    //     console.log(email);
+    //     alert('Login efetuado com sucesso!');
+
+    //     console.log(senha);
+    // }
 
     return (
         <>
@@ -54,15 +77,28 @@ export default function Login() {
                         <div className='logo_login'>
                             <img src={Logo} alt="" width={57.75} height={66} />
                         </div>
-                        <form action="">
+                        <form onSubmit={handleLogin}>
                             <h2 id='adp'>Área do Paciente</h2>
                             <h3 id='amc'>Acessar a minha conta</h3>
-                            <label>E-mail:</label><br />
-                            <input id='email' type="e-mail" placeholder="Digite seu e-mail" /><br />
-                            <label htmlFor="senha">Senha:</label><br />
-                            <input id='senha' type="password" placeholder="Digite sua senha" />
+                            <label htmlFor='email'>E-mail:</label><br />
+                            <input 
+                                name='email'
+                                id='email' 
+                                type="e-mail" 
+                                placeholder="Digite seu e-mail" 
+                                onChange={(e) => setEmail(e.target.value)}
+                            /><br />
+                            <label htmlFor="password">Senha:</label><br />
+                            <input 
+                                name='password'
+                                id='password' 
+                                type="password" 
+                                placeholder="Digite sua senha" 
+                                onChange={(e) => setSenha(e.target.value)}
+                            />
+                            {error && <p className="error-message">{error}</p>}
                             <p id='ems'><a href="#" onClick={togglePasswordReset}>Esqueci minha senha</a></p>
-                            <button id='button_login'>Entrar</button>
+                            <button id='button_login' type='submit'>Entrar</button>
                             <p id='ntc'>Não tem uma conta? <a href="" onClick={() => navigation('/cadastro')}>Cadastre-se</a></p>
 
                         </form>
@@ -76,5 +112,7 @@ export default function Login() {
         </>
     );
 }
+
+
 
 

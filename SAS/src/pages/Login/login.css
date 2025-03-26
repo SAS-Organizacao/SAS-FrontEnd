@@ -53,7 +53,7 @@
     border-radius: 2px;
 }
 
-#senha {
+#password {
     width: 100%;
     padding: 6.8px;
     background-color: #eaeaea;
@@ -92,4 +92,8 @@
     margin: 30px 0;
     border: none;
     border-radius: 24px;
+}
+
+#button_login:hover {
+    background-color: #125E67;
 }

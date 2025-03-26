@@ -1,4 +1,16 @@
 .lateral {
+<<<<<<< HEAD
+  width: 385px;
+  height: 956px;
+  background-color: #1E94A2;
+  left: 0;
+  position: absolute;
+  top: 110px;
+  padding: 40px;
+
+
+  z-index: 1;
+=======
     position: fixed;
     top: 60px; /* Começa logo abaixo da navbar */
     left: 0;
@@ -10,6 +22,7 @@
     z-index: 998; /* Fica abaixo da navbar */
     overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
     margin-top: 3.1em;
+>>>>>>> d8fbb6a6a026ae2997778a0136ea7af826c0bd92
 }
 
 .btn_lateral {

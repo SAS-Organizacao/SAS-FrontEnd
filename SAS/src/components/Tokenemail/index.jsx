@@ -3,6 +3,7 @@ import PersonEmail_icon from '../../assets/images/icon-person-email.svg';
 import { useState } from 'react';
 import Autenticacao from '../Tokenautenticacao';
 
+
 export default function Email({ onClose }) {
 
     const [isAuthOpen, setIsAuthOpen] = useState(false);
@@ -24,7 +25,7 @@ export default function Email({ onClose }) {
         setIsAuthOpen(true);
         onClose(); // Fechar o componente Email
     };
-    
+
     return (
         <>
             {!isAuthOpen && (
