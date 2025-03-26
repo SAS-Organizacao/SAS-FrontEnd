@@ -3,8 +3,12 @@
   height: 956px;
   background-color: #1E94A2;
   left: 0;
-  top: 0;
+  position: absolute;
+  top: 110px;
   padding: 40px;
+
+
+  z-index: 1;
 }
 
 .btn_lateral {

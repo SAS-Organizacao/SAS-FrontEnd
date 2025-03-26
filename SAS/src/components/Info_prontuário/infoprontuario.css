@@ -1,0 +1,120 @@
+/* Arquivo: pacienteDetalhes.css */
+
+/* Container principal */
+.paciente-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Cabeçalho do paciente */
+  .paciente-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .paciente-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #00796b;
+  }
+  
+  .paciente-info {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .paciente-info h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .paciente-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+  }
+  
+  .paciente-info span {
+    font-weight: bold;
+    color: #00796b;
+  }
+  
+  .paciente-sangue {
+    text-align: right;
+  }
+  
+  .paciente-sangue p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .paciente-sangue h3 {
+    font-size: 18px;
+    color: #00796b;
+    margin: 5px 0 0;
+  }
+  
+  /* Linha divisória */
+  hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  /* Agendamentos */
+  .paciente-agendamentos h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .paciente-agendamentos p {
+    font-size: 14px;
+    color: #00796b;
+  }
+  
+  .paciente-agendamentos a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: bold;
+  }
+  
+  .paciente-agendamentos a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Observações */
+  .paciente-observacoes h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .paciente-observacoes ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .paciente-observacoes li {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .paciente-observacoes .icon {
+    margin-right: 8px;
+    color: #00796b;
+    font-size: 16px;
+  }

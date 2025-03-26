@@ -6,6 +6,8 @@
   
   .resultado-container {
     display: flex;
+    margin-left: 358px;
+    padding-top: 170px
   }
   
   .menu-lateral {
@@ -58,7 +60,7 @@
     width: 90%; /* Define uma largura menor */
     max-width: 90%; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
-    gap: 150px;
+    gap: 120px;
   }
   
   .resultado h3 {

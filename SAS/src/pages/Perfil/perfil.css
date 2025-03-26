@@ -3,7 +3,8 @@
     width: 70%;
     height: 700px;
     position: absolute;
-    bottom: 100px;
+    /* bottom: 100px; */
+    top: 190px;
     left: 385px;
     padding: 50px;
 }
@@ -25,6 +26,11 @@
     height: 50px;
     color: #fff;
     font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-dados:hover {
+    background-color: #005f6b;
 }
 
 .dados-p {
@@ -98,4 +104,9 @@
     height: 50px;
     color: #fff;
     font-size: 30px;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: #005f6b;
 }

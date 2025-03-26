@@ -4,7 +4,7 @@ import Resultadoexame from '../../assets/images/icon-tela-resultado-exame.svg'
 import { NotebookText } from "lucide-react";
 import Menulateral from "../../components/Menu_lateral";
 import Button from "../../components/Navbar";
-import Barra from "../../components/Barra";
+// import Barra from "../../components/Barra";
 
 
 
@@ -15,7 +15,7 @@ export default function ResultadoExames() {
       prontuario: "21830",
       unidade: "",
       data: "25/01/2025",
-      requerente: "",
+      requerente: "José Abravanel",
       laudo: "Disponível",
       status: "verde",
       documentos: ["Laudo"],
@@ -46,7 +46,7 @@ export default function ResultadoExames() {
     <>
     <Button/>
     <Menulateral/>
-    <Barra />
+    {/* <Barra /> */}
     <div className="resultado-container">
   
       <main className="conteudo">
