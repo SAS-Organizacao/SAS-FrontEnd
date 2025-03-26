@@ -21,13 +21,11 @@ export default function Login() {
     const [senha, setSenha] = useState('');
     const [error, setError] = useState('');
 
-
     const [isEmailOpen, setIsEmailOpen] = useState(false);
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isSenhaOpen, setIsSenhaOpen] = useState(false);
     const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
     
-
     const togglePasswordReset = (e) => {
         e.preventDefault();
         setIsEmailOpen(!isEmailOpen);
@@ -66,7 +64,6 @@ export default function Login() {
 
     //     console.log(senha);
     // }
-    
 
     return (
         <>
@@ -113,7 +110,9 @@ export default function Login() {
                 {isFeedbackOpen && <Feedback onClose={() => setIsFeedbackOpen(false)} />}
             </section>
         </>
-
     );
 }
+
+
+
 

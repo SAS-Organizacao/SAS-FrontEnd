@@ -2,12 +2,12 @@ import React from "react";
 import Menulateral from "../../components/Menu_lateral";
 import Navbar from "../../components/Navbar";
 import "./historicoconsultas.css";
-import Iconcalendario from "../../assets/images/icon-calendario.svg";
-import Iconespecialidade from "../../assets/images/icon-especialidade.svg";
-import Iconmedico from "../../assets/images/icon-medico.svg";
-import Iconposto from "../../assets/images/icon-posto.svg";
+// import Iconcalendario from "../../assets/images/icon-calendario.svg";
+// import Iconespecialidade from "../../assets/images/icon-especialidade.svg";
+// import Iconmedico from "../../assets/images/icon-medico.svg";
+// import Iconposto from "../../assets/images/icon-posto.svg";
 
-export default function HistoricoConsultas() {
+export default function Historicoconsultas() {
   const consultas = [
     {
       data: "Quarta-feira, 22/01/2025 às 08:07",

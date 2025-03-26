@@ -17,7 +17,8 @@ import Barra from './components/Barra'
 import Resultado_exames from './pages/Resultado_exames'
 import AreaPaciente from './pages/Area_paciente/areapac'
 import Histórico_consultas from './pages/Histórico_consultas'
-import Info_prontuario from './pages/Info_prontuário'
+import Info_prontuario from './components/Info_prontuario'
+import Sobre from './pages/Sobre/sobre'
 
 
 function App() {
@@ -54,6 +55,9 @@ function App() {
         <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
 
         <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
+
+        <Route path='/sobre' element={<Sobre/>} ></Route>
+ 
 
       </Routes>
     </BrowserRouter>

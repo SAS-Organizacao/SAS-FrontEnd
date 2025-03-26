@@ -47,27 +47,24 @@ export default function Menulateral() {
                         <img src={Imghistorico} alt="" width={31} />
                         <a href="">Histórico de consultas</a>
                     </div>
+
+                    <div className="menu-column">
+                        <img src={Imgperfil} alt="" width={31} />
+                        <a href="">Perfil</a>   
+                    </div>
+
+                    <div className="menu-column">
+                        <img src={Imgsegurança} alt="" width={31} />
+                        <a href="">Segurança</a>
+                    </div>
+
+                    <div className="menu-column">
+                        <img src={Imgsair} alt="" width={31} />
+                        <a href="">Sair</a>
+                    </div>
                     
-                   
-                   <div className="menu-baixo">
-
-                        <div className="menu-baixo-column">
-                            <img src={Imgsegurança} alt="" width={31} />
-                            <a href="">Segurança</a>
-                        </div>
-                        
-                        <div className="menu-baixo-column">
-                            <img src={Imgperfil} alt="" width={31} />
-                            <a href="">Perfil</a>   
-                        </div>
-
-                        <div className="menu-baixo-column">
-                            <img src={Imgsair} alt="" width={31} />
-                            <a href="">Sair</a>
-                        </div>
                    </div>
                 </div>
-            </div>
         </>
     )
 }

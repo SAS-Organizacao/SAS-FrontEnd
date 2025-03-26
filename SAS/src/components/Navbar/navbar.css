@@ -7,8 +7,12 @@
     background-color: #fff;
     padding: 5px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+<<<<<<< HEAD
 
     z-index: 2;
+=======
+    z-index: 999;
+>>>>>>> d8fbb6a6a026ae2997778a0136ea7af826c0bd92
 }
 
 .logo {

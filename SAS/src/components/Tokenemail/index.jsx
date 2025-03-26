@@ -1,6 +1,7 @@
 import './email.css';
 import PersonEmail_icon from '../../assets/images/icon-person-email.svg';
 import { useState } from 'react';
+import Autenticacao from '../Tokenautenticacao';
 
 
 export default function Email({ onClose }) {
