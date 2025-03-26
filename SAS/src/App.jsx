@@ -14,6 +14,7 @@ import Agendar_consulta from './components/Agendar_consulta'
 import Perfil from './pages/Perfil'
 import Barra from './components/Barra'
 import AreaPaciente from './pages/Area_paciente/areapac'
+import Sobre from './pages/Sobre/sobre'
 
 function App() {
 
@@ -43,6 +44,8 @@ function App() {
         <Route path='/barra' element={<Barra/>} ></Route>
 
         <Route path='/areapaciente' element={<AreaPaciente/>} ></Route>
+
+        <Route path='/sobre' element={<Sobre/>} ></Route>
 
       </Routes>
     </BrowserRouter>

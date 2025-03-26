@@ -40,9 +40,7 @@ export default function Login() {
         setIsFeedbackOpen(true);
     };
     
-    // const togglePasswordReset = () => {
-    //     setIsOpen(!isOpen)
-    // }
+
 
     return (
         <>

@@ -1,10 +1,15 @@
 .lateral {
-  width: 385px;
-  height: 956px;
-  background-color: #1E94A2;
-  left: 0;
-  top: 0;
-  padding: 40px;
+    position: fixed;
+    top: 60px; /* Começa logo abaixo da navbar */
+    left: 0;
+    width: 350px;
+    height: calc(100vh - 60px); /* Preenche o restante da tela abaixo da navbar */
+    background-color: #1E94A2;
+    color: white;
+    padding: 20px;
+    z-index: 998; /* Fica abaixo da navbar */
+    overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
+    margin-top: 3.1em;
 }
 
 .btn_lateral {
@@ -20,12 +25,27 @@
 .btn_lateral a {
     text-decoration: none;
     color: #fff;
+    position: relative
+}
+
+.btn_lateral a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.btn_lateral a:hover::after {
+    width: 100%;
 }
 
 .menu-column {
     margin: 0;
     transition: transform 0.5s ease;
-    /* border: 1px solid red; */
     max-width: 280px;
     gap: 15px;
     display: flex;
@@ -35,64 +55,18 @@ img {
     margin-left: 0;
 }
 
-.menu-column::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width 0.3s ease;
-}
-
-.menu-column:hover::after {
-    width: 100%;
-}
 
 .btn_lateral, .menu-column:hover {
     transform: translateY(-3px);
 }
 
-/* efeitos do menu baixo */
-.menu-baixo, .menu-baixo-column:hover {
-    transform: translateY(-3px);
-}
-
-.menu-baixo-column:hover::after {
-    width: 100%;
-}
-
-.menu-baixo-column::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: width 0.3s ease;
-}
-
-.menu-baixo {
-    /* border: 1px solid red; */
-    font-size: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: space-between;
-    text-decoration: none;
-    margin-top: 19rem ;
-}
-
-.menu-baixo-column {
+.menu-column {
     margin: 0;
     transition: transform 0.5s ease;
-    /* border: 1px solid red; */
     max-width: 280px;
     gap: 15px;
     display: flex;
-}
+} 
 
 
 
