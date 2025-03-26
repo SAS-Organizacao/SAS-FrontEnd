@@ -19,6 +19,7 @@ import AreaPaciente from './pages/Area_paciente/areapac'
 import Histórico_consultas from './pages/Histórico_consultas'
 import Info_prontuario from './components/Info_prontuario'
 import Sobre from './pages/Sobre/sobre'
+import Botoes_prontuario_med from './components/Botoes_prontuario_med'
 
 
 function App() {
@@ -58,6 +59,8 @@ function App() {
 
         <Route path='/sobre' element={<Sobre/>} ></Route>
  
+
+        <Route path='/botoes_prontuario_med' element={<Botoes_prontuario_med/>} ></Route>
 
       </Routes>
     </BrowserRouter>
