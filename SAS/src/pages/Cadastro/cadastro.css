@@ -102,16 +102,17 @@
     left: -150px; */
 }
 
-.btn-cadastro a {
+.btn-cadastro button {
     background-color: #1E94A2;
     border-radius: 24px;
     padding: 10px 90px;
     color: #fff;
     text-decoration: none; 
     transition: background-color 0.5s ease;
+    border: none;
 }
 
-.btn-cadastro a:hover {
+.btn-cadastro button:hover {
     background-color: #125E67;
 }
 

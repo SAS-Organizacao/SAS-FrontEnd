@@ -41,12 +41,7 @@ export default function Login() {
         setIsSenhaOpen(false);
         setIsFeedbackOpen(true);
     };
-
-    const [isOpen, setIsOpen] = useState(false)
     
-    const togglePasswordReset = () => {
-        setIsOpen(!isOpen)
-    }
 
     return (
         <>
@@ -84,6 +79,6 @@ export default function Login() {
     );
 }
 
-    )
-}
+//     )
+// }
 
