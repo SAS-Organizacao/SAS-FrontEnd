@@ -31,13 +31,9 @@
 
 .sobre-nos{
     background-color: white;
-    /* display: flex; */
     width: 1400px;
     height: 500px;
     position: relative;
     z-index: 3;
-    /* top: -700px; */
     right: -400px;
-    /* margin-left: 100px;
-    padding: 10px; */
 }

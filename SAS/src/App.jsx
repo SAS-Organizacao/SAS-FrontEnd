@@ -15,6 +15,7 @@ import Perfil from './pages/Perfil'
 import Barra from './components/Barra'
 import AreaPaciente from './pages/Area_paciente/areapac'
 import Sobre from './pages/Sobre/sobre'
+import Botoes_prontuario_med from './components/Botoes_prontuario_med'
 
 function App() {
 
@@ -46,6 +47,8 @@ function App() {
         <Route path='/areapaciente' element={<AreaPaciente/>} ></Route>
 
         <Route path='/sobre' element={<Sobre/>} ></Route>
+
+        <Route path='/botoes_prontuario_med' element={<Botoes_prontuario_med/>} ></Route>
 
       </Routes>
     </BrowserRouter>
