@@ -15,13 +15,11 @@ export default function Login() {
 
     const navigation = useNavigate();
 
-
     const [isEmailOpen, setIsEmailOpen] = useState(false);
     const [isAuthOpen, setIsAuthOpen] = useState(false);
     const [isSenhaOpen, setIsSenhaOpen] = useState(false);
     const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
     
-
     const togglePasswordReset = (e) => {
         e.preventDefault();
         setIsEmailOpen(!isEmailOpen);
@@ -42,6 +40,7 @@ export default function Login() {
         setIsFeedbackOpen(true);
     };
     
+
 
     return (
         <>
@@ -75,10 +74,7 @@ export default function Login() {
                 {isFeedbackOpen && <Feedback onClose={() => setIsFeedbackOpen(false)} />}
             </section>
         </>
-
     );
 }
 
-//     )
-// }
 

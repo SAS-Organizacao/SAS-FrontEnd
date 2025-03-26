@@ -11,8 +11,6 @@ export default function Barra () {
             <input type="text" placeholder="Pesquisar..."/>
             <img src={Lupa} className='lupa' />
         </div>
-        
        </nav>
-
     )
 }

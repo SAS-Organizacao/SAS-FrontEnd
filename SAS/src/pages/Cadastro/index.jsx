@@ -4,7 +4,6 @@ import LogoCadastro from '../../assets/images/logo-sas.svg'
 import CadastroImg from '../../assets/images/cadastro-img.svg'
 import { useState } from 'react'
 
-
 export default function Cadastro() {
 
     const [nome, setNome] =  useState('')
@@ -39,6 +38,7 @@ export default function Cadastro() {
         console.log({ nome, cpf, email, senha, confirme_Senha });
     }
 
+
     return (
        
         <>
@@ -62,11 +62,14 @@ export default function Cadastro() {
                             <div className='form-container'>
                                 <div className='contentForm'>
                                     <label htmlFor='nome'>Nome</label>
+
+
                                     <input id='nome' name='nome' 
                                     type='text' 
                                     className='inputContent' 
                                     placeholder='Ex.: Jão Batista da Silva'
                                     onChange={(e) => setNome(e.target.value)}
+
                                     />
                                 </div>
 
@@ -129,5 +132,8 @@ export default function Cadastro() {
                 </div>
             </div>
         </>
-        )
-    }
+
+    )
+}
+
+

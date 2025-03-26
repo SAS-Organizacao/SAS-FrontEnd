@@ -43,6 +43,5 @@ export default function Footer() {
                 &copy; TODOS OS DIREITOS RESERVADOS
             </div>
         </footer>
-        
     )
 }
