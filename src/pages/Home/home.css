@@ -1,0 +1,245 @@
+
+/* com grandiente */
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color: #f9f9f9; */
+    background-image: linear-gradient(to bottom right, #fff, #1E94A2);
+}
+
+.section-img {
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -999;
+}
+
+
+.section-img img {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate( 0%, 20% );
+}
+
+/* .imagem-homepage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    min-height: 60vh;
+    max-height: 80vh;
+    margin-top: 1.3px;
+} */
+
+.detalhe-saiba-mais {
+    background-color: #004B54;
+    padding: 15px 20px 15px 200px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    top: 69%;
+    left: 0%;
+    position: absolute;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    z-index: 1;
+}
+
+.detalhe-saiba-mais a {
+    text-decoration: none;
+    color : #fff; 
+}
+
+.detalhe-saiba-mais:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    background-color: #1E94A2;
+}
+
+.detalhe-info-agendamento {
+    background-color: #004B54;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    top: 59%;
+    left: 0%;
+    /* transform: translate( -200%, 100%); */
+    position: absolute;
+    transition: transform 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    z-index: 1;
+}
+
+.detalhe-info-agendamento:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    background-color: #1E94A2;
+}
+
+.detalhe-info-agendamento p {
+    font-size: 22.5px;
+    color: #fff;
+}
+
+#das {
+    font-size: 13px;
+}
+
+.secao_01 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 100px 0;
+    padding: 80px 20px;
+    background-color: #1e95a21c;
+}
+
+.secao_01 h2 {
+    font-size: 3em;
+    font-weight: 380;
+    color: #000000d0;
+    margin-right: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    width: 280px;
+    min-height: 300px;
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.2em;
+    color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: #1E94A2;
+}
+
+.grid-item img {
+    margin-bottom: 20px;
+    transition: transform 0.3s ease , color 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Seção 02 - Status e Ajuda */
+.stats {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 40px;
+    margin-bottom: 80px;
+    background-color: #1e95a21c;
+    padding: 80px 230px;
+}
+
+.status .numbers-stats {
+    text-align: left;
+}
+
+.homepage-status,
+.homepage-ajuda {
+    width: 100%;
+}
+
+.text-column {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.text-column p {
+    font-size: 1.2em;
+    color: #000000d0;
+    line-height: 1.5;
+}
+
+.text-column:hover {
+    background-color: #f5f5f5;
+    transform: translateX(5px);
+}
+
+.text-column img {
+    transition: transform 0.3s ease;
+}
+
+.text-column:hover img {
+    transform: scale(1.05);
+}
+
+.homepage-ajuda {
+    text-align: center;
+}
+
+.subtilulo-secao-ajuda {
+    text-align: left;
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #000000d0;
+    margin-bottom: 30px;
+}
+
+.ajuda p {
+    text-align: left;
+    font-size: 1.1em;
+    color: #000000d0;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.numbers-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.numbers-stats div {
+    text-align: center;
+}
+
+.numbers-stats h1 {
+    font-size: 2.5em;
+    color: #000000d0;
+    margin-bottom: 5px;
+}
+
+.numbers-stats p {
+    color: #000000d0;
+    font-size: 1em;
+}
+
+
+.numbers-stats h1 {
+    font-weight: 450;
+    text-align: left;
+}

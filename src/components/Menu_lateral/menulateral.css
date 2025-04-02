@@ -1,0 +1,78 @@
+.lateral {
+     width: 385px;
+    height: 956px;
+    background-color: #1E94A2;
+    left: 0;
+    position: absolute;
+    top: 110px;
+    padding: 40px;
+    z-index: 1;
+    /* position: fixed;
+    top: 60px;
+    left: 0;
+    width: 350px;
+    height: calc(100vh - 60px);
+    background-color: #1E94A2;
+    color: white;
+    padding: 20px;
+    z-index: 998;
+    overflow-y: auto;
+    margin-top: 3.1em;  */
+
+}
+
+.btn_lateral {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.btn_lateral a {
+    text-decoration: none;
+    color: #fff;
+    position: relative
+}
+
+.btn_lateral a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.btn_lateral a:hover::after {
+    width: 100%;
+}
+
+.menu-column {
+    margin: 0;
+    transition: transform 0.5s ease;
+    max-width: 280px;
+    gap: 15px;
+    display: flex;
+}
+
+img {
+    margin-left: 0;
+}
+
+
+.btn_lateral,
+.menu-column:hover {
+    transform: translateY(-3px);
+}
+
+.menu-column {
+    margin: 0;
+    transition: transform 0.5s ease;
+    max-width: 280px;
+    gap: 15px;
+    display: flex;
+}
