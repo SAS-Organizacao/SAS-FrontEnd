@@ -8,6 +8,9 @@ import Email from './components/Tokenemail'
 import Autenticacao from './components/Tokenautenticacao'
 import Redefinir from './components/RedefinirSenha'
 import Feedback from './components/Feedback'
+import NavbarLogada from './components/Navbar_logada'
+import Barra_med from './components/Barra-med'
+
 
 import Menu_lateral from './components/Menu_lateral'
 import Agendar_consulta from './components/Agendar_consulta'
@@ -20,6 +23,8 @@ import Histórico_consultas from './pages/Histórico_consultas'
 import Info_prontuario from './components/Info_prontuario'
 import Sobre from './pages/Sobre/sobre'
 import Botoes_prontuario_med from './components/Botoes_prontuario_med'
+import Agendar_exames from './pages/Agendar_exames'
+import Exames_agendar from './components/Exames_agendar'
 
 
 function App() {
@@ -58,9 +63,16 @@ function App() {
         <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
 
         <Route path='/sobre' element={<Sobre/>} ></Route>
- 
 
         <Route path='/botoes_prontuario_med' element={<Botoes_prontuario_med/>} ></Route>
+
+        <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
+
+        <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route>
+
+        <Route path='/barra_med' element={<Barra_med/>} ></Route>
+
+        <Route path='/exames_agendar' element={<Exames_agendar/>} ></Route>
 
       </Routes>
     </BrowserRouter>
