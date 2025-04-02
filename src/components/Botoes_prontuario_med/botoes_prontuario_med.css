@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(74%, 60%);
+}
+
+.btn-atendimento{
+    background-color: #E2E2E2;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.btn-exames{
+    background-color: #E2E2E2;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.btn-documentos{
+    background-color: #E2E2E2;
+    width: 500px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    flex-direction: column;
+}
+

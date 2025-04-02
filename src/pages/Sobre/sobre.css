@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-claro{
+    background-color: #19C1E7;
+    width: 1400px;
+    height: 1000px;
+    border-radius: 0 80px 0 0;
+    z-index: 1;
+}
+
+.container-escuro {
+    width: 1400px;
+    height: 743px;
+    background-color: #1E94A2;
+    z-index: 2;
+    position: relative;
+    top: -743px;
+    right: -200px;
+    border-radius: 80px 0 0 0;
+}
+
+.container-escuro h1{
+    margin-left: 100px;
+    padding: 15px;
+    color: white;
+}
+
+.sobre-nos{
+    background-color: white;
+    width: 1400px;
+    height: 500px;
+    position: relative;
+    z-index: 3;
+    right: -400px;
+}
