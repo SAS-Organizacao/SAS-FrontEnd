@@ -1,9 +1,10 @@
 .perfil {
     /* background-color: pink; */
     width: 70%;
-    height: 800px;
+    height: 700px;
     position: absolute;
-    bottom: -300px;
+    /* bottom: 100px; */
+    top: 190px;
     left: 385px;
     padding: 50px;
 }
@@ -14,6 +15,7 @@
     border-radius: 0 30px 30px 0;
     padding: 20px; 
     margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
 }
 
 .btn-dados {
@@ -23,6 +25,12 @@
     width: 50px;
     height: 50px;
     color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn-dados:hover {
+    background-color: #005f6b;
 }
 
 .dados-p {
@@ -30,7 +38,6 @@
     /* width: 750px; */
     display: flex;
     justify-content: space-between;
-    
 }
 
 .dados-info {
@@ -38,11 +45,68 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
-    padding: 30px 0 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .dados-acesso {
-    background-color: #D2D1D1;
+    background-color: #E2E2E2;
     padding: 20px;
     border-radius: 30px 0 0 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+}
+
+.dados-a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dados-contato {
+    display: flex ;
+    flex: 1;
+    gap: 380px;
+}
+
+.dados-acesso-colum {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dados-acesso-colum input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.dados-celular input {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+}
+
+.dados-celular {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.edit {
+    border: none;
+    background-color: #1E94A2;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.edit:hover {
+    background-color: #005f6b;
 }

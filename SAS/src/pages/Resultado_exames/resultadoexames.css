@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resultado-container {
+    display: flex;
+    margin-left: 358px;
+    padding-top: 170px
+  }
+  
+  .menu-lateral {
+    width: 250px;
+    background-color: #007b8f;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+  }
+  
+  .menu-lateral ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu-lateral li {
+    margin: 15px 0;
+    cursor: pointer;
+  }
+  
+  .conteudo {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .barra-superior {
+    background-color: #007b8f;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; /* Centraliza os cards */
+    margin: 50px;
+    
+  }
+  
+  .resultado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%; /* Define uma largura menor */
+    max-width: 90%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
+    gap: 120px;
+  }
+  
+  .resultado h3 {
+    margin: 0;
+    color: #007b8f;
+  }
+  
+  .resultado ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resultado .detalhes {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .resultado .detalhes p {
+    margin: 5px 0;
+  }
+  
+  .resultado .documentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1E94A2 ;
+  }
+  
+  .resultado .documentos button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px 30px;
+    background-color: #1E94A2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .resultado .documentos button:hover {
+    background-color: #005f6b;
+  }
+  
+  .resultado .icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .status {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+  }
+  
+  .status.verde {
+    background-color: green;
+  }
+  
+  .status.vermelho {
+    background-color: red;
+  }
+  
+  .resultado .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    /* background-color: #e6f7f9; */
+    /* border-radius: 50%; */
+    border-right: 2px solid #1E94A2; 
+  }
+  
+  .resultado .icon-container img {
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+
+

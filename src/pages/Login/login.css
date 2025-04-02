@@ -55,7 +55,7 @@
     border-radius: 2px;
 }
 
-#senha {
+#password {
     width: 100%;
     padding: 6.8px;
     background-color: #eaeaea;
@@ -98,6 +98,7 @@
 }
 
 #button_login:hover {
+<<<<<<< HEAD:src/pages/Login/login.css
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #004B54;
     transform: translateY(-5px);
@@ -117,3 +118,7 @@
     transform: scale(1.05);
 }
 
+=======
+    background-color: #125E67;
+}
+>>>>>>> 3e31875b1ec07fb6d08036f675378f26fcde7fdb:SAS/src/pages/Login/login.css

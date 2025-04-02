@@ -1,13 +1,22 @@
 import './perfil.css'
 import Button from '../../components/Navbar'
 import Menulateral from '../../components/Menu_lateral'
+// import Barra from '../../components/Barra'
+import { useState } from 'react'
 
 export default function Perfil() {
+    
+    function cadastroUsuario() {
+        e.preventDefault()
+        console.log('Cadastrado com sucesso!')
+    }
+    const [nome, setNome] = useState('')
     
     return (
         <>
         <Button/>
         <Menulateral/>
+        {/* <Barra/> */}
         <div className='perfil'>
             <div className='dados-pessoais'>
                <div className='dados-p'>
@@ -36,13 +45,21 @@ export default function Perfil() {
             <div className='dados-acesso'>
                 <div className='dados-a'>
                     <h3>DADOS DE ACESSO</h3>
-                    <button></button>
+                    <button className='edit'>&#43;</button>
                 </div>
 
                 <div className='dados-contato'>
-                    <h4>E-mail</h4>
-                    <h4>Senha</h4>
-                    <h4>Celular</h4>
+                    <div className='dados-acesso-colum'>
+                        <label htmlFor="email"><strong>E-mail</strong></label>
+                        <input type="email" placeholder='juditecunha@gmail.com'/>
+                        <label htmlFor="password"><strong>Senha</strong></label>
+                        <input type="password" placeholder='**********'/>
+                        
+                    </div>
+                    <div className='dados-celular'>
+                        <label htmlFor="celular"><strong>Celular</strong></label>
+                        <input type="text" id='celular' placeholder='(81) XXXXX-XXXX'/>
+                    </div>
                 </div>
             </div>
         </div>

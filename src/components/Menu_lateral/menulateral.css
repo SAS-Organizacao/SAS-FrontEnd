@@ -1,15 +1,24 @@
 .lateral {
-    position: fixed;
-    top: 60px; /* Começa logo abaixo da navbar */
+     width: 385px;
+    height: 956px;
+    background-color: #1E94A2;
+    left: 0;
+    position: absolute;
+    top: 110px;
+    padding: 40px;
+    z-index: 1;
+    /* position: fixed;
+    top: 60px;
     left: 0;
     width: 350px;
-    height: calc(100vh - 60px); /* Preenche o restante da tela abaixo da navbar */
+    height: calc(100vh - 60px);
     background-color: #1E94A2;
     color: white;
     padding: 20px;
-    z-index: 998; /* Fica abaixo da navbar */
-    overflow-y: auto; /* Permite rolagem se o conteúdo for maior que a altura */
-    margin-top: 3.1em;
+    z-index: 998;
+    overflow-y: auto;
+    margin-top: 3.1em;  */
+
 }
 
 .btn_lateral {
@@ -19,7 +28,6 @@
   gap: 40px;
   justify-content: space-between;
   text-decoration: none;
-  /* border: 1px solid red ; */
 }
 
 .btn_lateral a {
@@ -56,7 +64,8 @@ img {
 }
 
 
-.btn_lateral, .menu-column:hover {
+.btn_lateral,
+.menu-column:hover {
     transform: translateY(-3px);
 }
 
@@ -66,11 +75,4 @@ img {
     max-width: 280px;
     gap: 15px;
     display: flex;
-} 
-
-
-
-
-
-
- 
+}
