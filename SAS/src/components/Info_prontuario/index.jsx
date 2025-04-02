@@ -26,9 +26,9 @@ export default function Infoprontuario() {
 
        <div className='info-obs'>
           <h4>Observações:</h4>
-          <p> <img src={Obs} alt="" />Alergia a Dipirona</p>
-          <p> <img src={Obs} alt="" />Diabetes</p>
-          <p> <img src={Obs} alt="" />Hiperetensão</p>
+          <div> <img src={Obs} alt="" /> <p>Alergia a Dipirona</p></div>
+          <div> <img src={Obs} alt="" /> <p>Diabetes</p></div>
+          <div> <img src={Obs} alt="" /> <p>Hiperetensão</p></div>
        </div>
       </div>
     )

@@ -1,0 +1,119 @@
+.container-area-profissional {
+    position: relative;
+    left: 450px;
+    top: 200px;
+}
+
+.agendamentos-container {
+    width: 500px;
+}
+
+.tabela-agendamentos {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #1E94A2;
+    border-radius: 8px;
+}
+
+.overflow-y {
+    border-radius: 8px;
+}
+
+.linha {
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #fff;
+    transition: background-color 0.2s;
+}
+
+.linha:last-child {
+    border-bottom: none;
+}
+
+.cabecalho {
+    background-color: #1E94A2;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.coluna {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.paciente {
+    flex: 2;
+    font-weight: 500;
+}
+
+.tipo-horario {
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+.tipo-consulta,
+.tipo-retorno {
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.tipo-consulta {
+    background-color: #e3f2fd;
+    color: #1976d2;
+}
+
+.tipo-retorno {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+.horario {
+    color: #6c757d;
+    font-weight: 400;
+    min-width: 60px;
+    text-align: right;
+}
+
+/* @media (max-width: 768px) {
+    .agendamentos-container {
+        padding: 1rem;
+    }
+
+    .linha {
+        padding: 0.75rem 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .tipo-horario {
+        justify-content: flex-start;
+    }
+
+    .cabecalho .tipo-horario {
+        display: none;
+    }
+} */
+
+
+.container-area-profissional {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+}
+
+.container-atend {
+    width: 500px;
+}
+
+.tabela-atendimentos {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #1E94A2;
+    border-radius: 8px;
+}

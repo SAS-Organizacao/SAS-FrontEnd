@@ -1,4 +1,4 @@
-import { Component } from 'react'
+
 import Home from './pages/Home'
 import Login from './pages/Login'
 import { BrowserRouter, Routes, Route } from 'react-router'
@@ -16,9 +16,11 @@ import Barra from './components/Barra'
 
 import Resultado_exames from './pages/Resultado_exames'
 import AreaPaciente from './pages/Area_paciente/areapac'
-import Histórico_consultas from './pages/Histórico_consultas'
+import Historico_consultas from './pages/Histórico_consultas'
 import Info_prontuario from './components/Info_prontuario'
 import Sobre from './pages/Sobre/sobre'
+import Login_profissional from './pages/Login_profissional'
+import Area_profissional from './pages/Area_profissional'
 
 
 function App() {
@@ -52,13 +54,16 @@ function App() {
         
         <Route path='/areapaciente' element={<AreaPaciente/>} ></Route>
 
-        <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
+        <Route path='/historicoconsultas' element={<Historico_consultas/>} ></Route>
 
         <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
 
         <Route path='/sobre' element={<Sobre/>} ></Route>
- 
 
+        <Route path='/loginprofissional' element={<Login_profissional/>} ></Route>
+
+        <Route path='/areaprofissional' element={<Area_profissional/>} ></Route>
+ 
       </Routes>
     </BrowserRouter>
   )
