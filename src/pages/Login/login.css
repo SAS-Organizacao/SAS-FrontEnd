@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    background: url(../../assets/images/plano-de-fundo.svg), no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.login-container-content {
+    background-color: #fff;
+    width: 1000px;
+    height: 584px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    color: #000;
+    padding: 30px 90px;
+}
+
+#adp {
+    text-align: center;
+    padding: 20px 0 50px 0;
+}
+
+#amc {
+    text-align: left;
+    margin: 0 0 10px 0
+}
+
+#email {
+    width: 100%;
+    padding: 6.8px;
+    background-color: #eaeaea;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+#senha {
+    width: 100%;
+    padding: 6.8px;
+    background-color: #eaeaea;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.imgForm {
+    width: 50%;
+}
+
+.logo_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ems {
+    text-align: right;
+    margin: 5 0 10 0;
+    font-size: 14px;
+}
+
+#ntc {
+    text-align: center;
+    font-size: 14px;
+}
+
+#button_login {
+    font-size: 18px;
+    padding: 5px 133px;
+    background-color: #1E94A2;
+    color: #fff;
+    cursor: pointer;
+    margin: 30px 0;
+    border: none;
+    border-radius: 24px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#button_login:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #004B54;
+    transform: translateY(-5px);
+}
+
+.form-login input{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease;;
+}
+
+.form-login input:focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transform: scale(1.05);
+}
+
