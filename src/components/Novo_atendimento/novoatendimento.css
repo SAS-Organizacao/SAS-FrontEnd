@@ -1,0 +1,41 @@
+.container_novoatendimento {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.container_novoatendimento button {
+    background-color: #004B54;
+    display: flex;
+    gap: 15px;
+    /* height: 50px; */
+    border-radius: 24px;
+    padding: 10px 60px;
+    color: #fff;
+    text-decoration: none; 
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    border: none;
+}
+
+.container_novoatendimento button:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    background-color: #1E94A2;
+}
+
+.container-atend {
+    /* background-color: #1E94A2; */
+    width: 600px;
+    height: 50px;
+    gap: 20px;
+    padding: 20px;
+    border-top: #1E94A2 1px solid;
+    margin: 30px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
