@@ -1,33 +1,21 @@
 .lateral {
-     width: 385px;
+    width: 385px;
     height: 956px;
-    background-color: #1E94A2;
+    background-color: #004B54;
     left: 0;
     position: absolute;
     top: 110px;
     padding: 40px;
     z-index: 1;
-    /* position: fixed;
-    top: 60px;
-    left: 0;
-    width: 350px;
-    height: calc(100vh - 60px);
-    background-color: #1E94A2;
-    color: white;
-    padding: 20px;
-    z-index: 998;
-    overflow-y: auto;
-    margin-top: 3.1em;  */
-
 }
 
 .btn_lateral {
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  justify-content: space-between;
-  text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: space-between;
+    text-decoration: none;
 }
 
 .btn_lateral a {

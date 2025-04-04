@@ -1,7 +1,9 @@
 import Button from "../../components/Navbar";
 import "../Cadastro/cadastro.css";
-import LogoCadastro from "../../assets/images/logo-sas.svg";
-import CadastroImg from "../../assets/images/cadastro-img.svg";
+import Logoicon from "../../assets/images/logo-sas-png.png"
+import CadastroImg from "../../assets/images/cadastro2.jpeg";
+import Cadastro1 from "../../assets/images/cadastro1.jpg";
+
 import { useState } from "react";
 
 // navegação	
@@ -56,7 +58,7 @@ export default function Cadastro() {
         <div className="cadastroContent">
           <form className="formContent" onSubmit={handleSubmit}>
             <div className="logoCadastro">
-              <img src={LogoCadastro} alt="logo-symbol"></img>
+              <img src={Logoicon} alt="logo-symbol"></img>
             </div>
 
             <h2>Paciente - Cadastre-se</h2>
@@ -142,14 +144,12 @@ export default function Cadastro() {
                 Já possui conta? <a href="/login">Entrar</a>
               </p>
             </div>
-          </form>
-
-          <img
-            src={CadastroImg}
-            className="imgCadastro"
-            width={1338.41}
-            height={710}
-          ></img>
+          </form> 
+            <img
+              className="imgCadastro"
+              src={CadastroImg}
+              alt="Imagem de cadastro"
+            />
         </div>
       </div>
     </>
