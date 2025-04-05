@@ -98,18 +98,17 @@
 }
 
 #button_login:hover {
-
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #004B54;
     transform: translateY(-5px);
 }
 
-.form-login input{
+.form-login input {
     margin-top: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: transform 0.3s ease;;
+    transition: transform 0.3s ease;
 }
 
 .form-login input:focus {
@@ -117,4 +116,3 @@
     outline: none;
     transform: scale(1.05);
 }
-

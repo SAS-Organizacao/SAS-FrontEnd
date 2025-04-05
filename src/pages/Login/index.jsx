@@ -52,23 +52,27 @@ export default function Login() {
             <form action="" className="form-login">
               <h2 id="adp">Área do Paciente</h2>
               <h3 id="amc">Acessar a minha conta</h3>
-              <label htmlFor="email">E-mail:</label>
-              <br />
-              <input
-                id="email"
-                name="email"
-                type="e-mail"
-                placeholder="Digite seu e-mail"
-              />
-              <br />
-              <label htmlFor="password">Senha:</label>
-              <br />
-              <input
-                id="password"
-                name="password"
-                type="password"
-                placeholder="Digite sua senha"
-              />
+              <div>
+                <label htmlFor="email">E-mail:</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="e-mail"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="password">Senha:</label>
+                <br />
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              
               <p id="ems">
                 <a href="#" onClick={togglePasswordReset}>
                   Esqueci minha senha
