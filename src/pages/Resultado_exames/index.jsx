@@ -1,7 +1,7 @@
 import React from "react";
 import "./resultadoexames.css";
 import Resultadoexame from '../../assets/images/icon-tela-resultado-exame.svg'
-// import { NotebookText } from "lucide-react"; Comentei essa linha porque ela estava impossibilitando de abrir o projeto no meu notebook.
+// import { NotebookText } from "lucide-react"; Comentei essa linha porque ela estava impossibilitando de abrir o projeto no meu notebook
 import Menulateral from "../../components/Menu_lateral";
 import Button from "../../components/Navbar";
 // import Barra from "../../components/Barra";
@@ -90,7 +90,7 @@ export default function ResultadoExames() {
                 </p>
                 {exame.documentos.map((doc, docIndex) => (
                   <button key={docIndex}>
-                    <NotebookText size={20} color="#fff" />
+                    {/* <NotebookText size={20} color="#fff" /> */}
                     {doc}
                   </button>
                 ))}
