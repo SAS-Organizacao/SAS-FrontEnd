@@ -13,15 +13,11 @@ import { api } from "../../services/api";
 export default function Cadastro() {
   // navegação
   const navigation = useNavigate();
-
+  // estados de cadastro
   const [nome, setNome] = useState("");
-
   const [cpf, setCpf] = useState("");
-
   const [email, setEmail] = useState("");
-
   const [senha, setSenha] = useState("");
-
   const [confirme_Senha, setConfirme_Senha] = useState("");
 
   async function handleSubmit(e) {
@@ -29,7 +25,8 @@ export default function Cadastro() {
 
     console.log({ nome, cpf, email, senha, confirme_Senha });
 
-    await api.post("/paciente/create", {
+    await api
+      .post("/paciente/create", {
         nome,
         cpf,
         email,
@@ -43,6 +40,27 @@ export default function Cadastro() {
         alert("Erro ao cadastrar, tente novamente.");
         console.log(error);
       });
+
+    // try {
+    //   const response = await api.post("/paciente/create", {
+    //     nome,
+    //     cpf,
+    //     email,
+    //     senha,
+    //     confirme_Senha, // Nome correto do campo
+    //   });
+    //   navigation("/login");
+    // } catch (error) {
+    //   alert("Erro ao cadastrar, tente novamente.");
+    //   console.error("Detalhes do erro:", error);
+
+    //   // Adicione mais detalhes para depuração
+    //   if (error.response) {
+    //     console.error("Resposta do servidor:", error.response.data);
+    //   } else if (error.request) {
+    //     console.error("Nenhuma resposta recebida");
+    //   }
+    // }
   }
 
   return (
@@ -119,58 +137,6 @@ export default function Cadastro() {
                     onChange={(e) => setConfirme_Senha(e.target.value)}
                   />
                 </div>
-{/* 
-                <div className="contentForm">
-                  <label htmlFor="data">Data de nascimento</label>
-                  <input
-                    id="data"
-                    name="data"
-                    type="date"
-                    className="inputContent"
-                  />
-                </div>
-
-                <div className="contentForm">
-                  <label htmlFor="genero">Gênero</label>
-                  <select id="genero" name="genero">
-                    <option value="">Selecione...</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                  </select>
-                </div>
-
-                <div className="contentForm">
-                  <label htmlFor="confirmarSenha">Telefone</label>
-                  <input
-                    id="telefone"
-                    name="telefone"
-                    type="tel"
-                    className="inputContent"
-                    placeholder="(00) 00000-0000"
-                  />
-                </div>
-
-                <div className="contentForm">
-                  <label htmlFor="confirmarSenha">Endereço</label>
-                  <input
-                    id="confirmarSenha"
-                    name="confirmarSenha"
-                    type="password"
-                    className="inputContent"
-                    placeholder="Confirme sua senha"
-                  />
-                </div>
-
-                <div className="contentForm">
-                  <label htmlFor="confirmarSenha">Confirme sua senha</label>
-                  <input
-                    id="confirmarSenha"
-                    name="confirmarSenha"
-                    type="password"
-                    className="inputContent"
-                    placeholder="Confirme sua senha"
-                  />
-                </div> */}
               </div>
 
               <div className="checkbox-content">

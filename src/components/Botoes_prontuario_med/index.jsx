@@ -1,4 +1,4 @@
-import './botoes_prontuario_med.css'
+import '../Botoes_prontuario_med/botoes_prontuario_med.css'
 import ImgAtendimento from '../../assets/images/icon-atendimento.svg'
 import ImgExames from '../../assets/images/icon-exame.svg'
 import ImgDocumento from '../../assets/images/icon-documento.svg'

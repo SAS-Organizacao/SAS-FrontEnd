@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router";
 import '../Menu_lateral/menulateral.css'
-import Button from '../Navbar'
 import Imgpaciente from "../../assets/images/icon-areapaciente.svg"
 import Imgprontuario from '../../assets/images/icon-prontuario.svg'
 import Imgconsultas from '../../assets/images/icon-consultas.svg'

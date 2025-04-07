@@ -23,7 +23,7 @@
 
 .info-agendamentos img {
   margin: 0 10px 0 0;
-}
+} 
 
 .info-agendamentos h4 {
   margin: 0 0 10px 0;
@@ -33,6 +33,11 @@
   padding: 20px;
   border-bottom: #1E94A2 1px solid;
   margin: 10px 10px
+}
+
+.info-obs div {
+  display: flex;
+  align-items: center;
 }
 
 .info-obs h4 {
