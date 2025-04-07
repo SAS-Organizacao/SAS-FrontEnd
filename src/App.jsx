@@ -22,6 +22,7 @@ import Barra from "./components/Barra";
 import AreaPaciente from "./pages/Area_paciente/areapac";
 import Sobre from "./pages/Sobre/sobre";
 import Botoes_prontuario_med from './components/Botoes_prontuario_med';
+import Prontuario_med from "./pages/Prontuario_med";
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/sobre" element={<Sobre />}></Route>
+        <Route path="/areapaciente" element={<AreaPaciente />}></Route>
+        <Route path="/prontuario-medico" element={<Prontuario_med/>}></Route>
+        
 
         <Route path="/cadastro" element={<Cadastro />}></Route>
         {/* Rotas dos componentes modal */}
@@ -44,26 +48,16 @@ function App() {
 
         {/* Componenetes para layout */}
         <Route path="/barra" element={<Barra />}></Route>
-
-        {/* Rotas menu lateral do sistema */}
-        <Route path="/areapaciente" element={<AreaPaciente />}></Route>
-        <Route path="/perfil" element={<Perfil />}></Route>
-        <Route path="/agendarconsulta" element={<Agendar_consulta />}></Route>
-
-        <Route path='/resultadoexames' element={<Resultado_exames/>} ></Route>
-        
-        <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
-
-        <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
-
-        <Route path='/botoes_prontuario_med' element={<Botoes_prontuario_med/>} ></Route>
-
-        <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
-
         <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route>
-
         <Route path='/barra_med' element={<Barra_med/>} ></Route>
-
+        {/* <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route> */}
+        <Route path='/botoes_prontuario_med' element={<Botoes_prontuario_med/>} ></Route>
+        <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
+        <Route path="/agendarconsulta" element={<Agendar_consulta />}></Route>
+        <Route path="/perfil" element={<Perfil />}></Route>
+        <Route path='/resultadoexames' element={<Resultado_exames/>} ></Route>
+        <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
+        <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -1,16 +1,16 @@
 import Button from "../../components/Navbar";
 import "../Cadastro/cadastro.css";
-import Logoicon from "../../assets/images/logo-sas-png.png"
+import Logoicon from "../../assets/images/logo-sas-png.png";
 import CadastroImg from "../../assets/images/cadastro2.jpeg";
 import Cadastro1 from "../../assets/images/cadastro1.jpg";
 
 import { useState } from "react";
 
-// navegação	
+// navegação
 import { useNavigate } from "react-router";
+import { api } from "../../services/api";
 
 export default function Cadastro() {
-
   // navegação
   const navigation = useNavigate();
 
@@ -24,30 +24,25 @@ export default function Cadastro() {
 
   const [confirme_Senha, setConfirme_Senha] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    if (!nome.trim()) {
-      alert("Por favor, digite seu nome.");
-      return;
-    }
-    if (!cpf.trim()) {
-      alert("Por favor, digite seu CPF.");
-      return;
-    }
-    if (!senha.trim()) {
-      alert("Por favor, digite uma senha.");
-      return;
-    }
-    if (!confirme_Senha.trim()) {
-      alert("Por favor, confirme sua senha.");
-      return;
-    }
 
-    if (!email.trim()) {
-      alert("Por favor, Digite seu e-mail.");
-      return;
-    }
     console.log({ nome, cpf, email, senha, confirme_Senha });
+
+    await api.post("/paciente/create", {
+        nome,
+        cpf,
+        email,
+        senha,
+        confirme_Senha,
+      })
+      .then((response) => {
+        navigation("/login");
+      })
+      .catch((error) => {
+        alert("Erro ao cadastrar, tente novamente.");
+        console.log(error);
+      });
   }
 
   return (
@@ -124,18 +119,76 @@ export default function Cadastro() {
                     onChange={(e) => setConfirme_Senha(e.target.value)}
                   />
                 </div>
+{/* 
+                <div className="contentForm">
+                  <label htmlFor="data">Data de nascimento</label>
+                  <input
+                    id="data"
+                    name="data"
+                    type="date"
+                    className="inputContent"
+                  />
+                </div>
+
+                <div className="contentForm">
+                  <label htmlFor="genero">Gênero</label>
+                  <select id="genero" name="genero">
+                    <option value="">Selecione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                  </select>
+                </div>
+
+                <div className="contentForm">
+                  <label htmlFor="confirmarSenha">Telefone</label>
+                  <input
+                    id="telefone"
+                    name="telefone"
+                    type="tel"
+                    className="inputContent"
+                    placeholder="(00) 00000-0000"
+                  />
+                </div>
+
+                <div className="contentForm">
+                  <label htmlFor="confirmarSenha">Endereço</label>
+                  <input
+                    id="confirmarSenha"
+                    name="confirmarSenha"
+                    type="password"
+                    className="inputContent"
+                    placeholder="Confirme sua senha"
+                  />
+                </div>
+
+                <div className="contentForm">
+                  <label htmlFor="confirmarSenha">Confirme sua senha</label>
+                  <input
+                    id="confirmarSenha"
+                    name="confirmarSenha"
+                    type="password"
+                    className="inputContent"
+                    placeholder="Confirme sua senha"
+                  />
+                </div> */}
               </div>
 
               <div className="checkbox-content">
                 <input type="checkbox" />
                 <p>
                   Estou de acordo com a <a href="">Politica de Privacidade</a>{" "}
-                  <link rel="stylesheet" onClick={() => navigation("/login")} />
+                  {/* <link rel="stylesheet" onClick={() => navigation("/login")} /> */}
                 </p>
               </div>
 
               <div className="btn-cadastro">
-                <button id="button-cadastro" type="submit" onClick={() => {navigation("/login")}}>
+                <button
+                  id="button-cadastro"
+                  type="submit"
+                  onClick={() => {
+                    navigation("/login");
+                  }}
+                >
                   Cadastrar
                 </button>
               </div>
@@ -144,12 +197,12 @@ export default function Cadastro() {
                 Já possui conta? <a href="/login">Entrar</a>
               </p>
             </div>
-          </form> 
-            <img
-              className="imgCadastro"
-              src={CadastroImg}
-              alt="Imagem de cadastro"
-            />
+          </form>
+          <img
+            className="imgCadastro"
+            src={CadastroImg}
+            alt="Imagem de cadastro"
+          />
         </div>
       </div>
     </>

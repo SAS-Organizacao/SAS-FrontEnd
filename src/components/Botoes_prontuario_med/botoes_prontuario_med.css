@@ -6,7 +6,9 @@
 
 .botoes {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
     top: 50%;
     left: 50%;
     transform: translate(74%, 60%);

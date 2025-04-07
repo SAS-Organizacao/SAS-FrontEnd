@@ -1,11 +1,11 @@
-import './Botoes_prontuario_med.css'
+import './botoes_prontuario_med.css'
 import ImgAtendimento from '../../assets/images/icon-atendimento.svg'
 import ImgExames from '../../assets/images/icon-exame.svg'
 import ImgDocumento from '../../assets/images/icon-documento.svg'
 
 
 export default function Botoes_prontuario_med() {
-    return [
+    return (
         <>
 
             <div className='botoes'>
@@ -29,5 +29,5 @@ export default function Botoes_prontuario_med() {
         
         </>
 
-    ]
+    )
 }
