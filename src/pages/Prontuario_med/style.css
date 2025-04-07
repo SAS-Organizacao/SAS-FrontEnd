@@ -1,0 +1,7 @@
+.prontuario-medico-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107.6vh;
+    background-image: linear-gradient(to bottom right, #fff, #1E94A2);
+}

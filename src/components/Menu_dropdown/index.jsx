@@ -20,7 +20,7 @@ export default function Button_dropdown() {
             {isOpen && (
                 <ul className="dropdown-menu">
                     <li className="dropdown-item" onClick={() => navigation('/login')}>Paciente</li>
-                    <li className="dropdown-item">Médico</li>
+                    <li className="dropdown-item" onClick={() => navigation('/loginprofissional')}>Médico</li>
                     <li className="dropdown-item">Posto parceiro</li>
                 </ul>
             )}

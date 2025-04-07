@@ -1,45 +1,111 @@
-import './loginprofissional.css';
-import Button from '../../components/Navbar';
-import Logoprofissional from '../../assets/images/logo-sas.svg';
-import Imgprofissional from '../../assets/images/img-login-profissional.svg';
+import Button from "../../components/Navbar";
+// import Logo from "../../assets/images/logo-sas.svg";
+import Logoicon from "../../assets/images/logo-sas-png.png"
+import Img_login_profissional from "../../assets/images/img-login-profissional.svg";
+
+import { Navigate, useNavigate } from "react-router";
+import { useState } from "react";
+
+import "./loginprofissional.css";
+import Email from "../../components/Tokenemail";
+import Autenticacao from "../../components/Tokenautenticacao";
+import Redefinir from "../../components/RedefinirSenha";
+import Feedback from "../../components/Feedback";
 
 export default function Login_profissional() {
+  const navigation = useNavigate();
 
-    return (
-        <>
-            <Button />
-            <div className='container-prof'>
-                <div className='img-profissional'>
-                    <img src={Imgprofissional} alt="" />
-                </div>
-                <div className='login-profissional'>
-                    <div className='logo-container'>
-                        <img src={Logoprofissional} alt="" width={57.75} height={66} />
-                    </div>
-                    <form className='form-profissional'>
-                        <h1>Área do Profissional de Saúde</h1>
-                        <h3>Acessar a minha conta</h3>
-                        <label htmlFor="email">E-mail:</label> <br />
-                        <input 
-                            id='email-prof'
-                            type="email" 
-                            placeholder='Digite seu e-mail' /><br />
+  const [isEmailOpen, setIsEmailOpen] = useState(false);
+  const [isAuthOpen, setIsAuthOpen] = useState(false);
+  const [isSenhaOpen, setIsSenhaOpen] = useState(false);
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
 
-                        <label htmlFor="codigo-acesso">Código de acesso:</label><br />
-                        <input 
-                            id='codigo-prof'
-                            type="password" 
-                            placeholder='Código referente a sua Unidade de Saúde' /><br />
+  const togglePasswordReset = (e) => {
+    e.preventDefault();
+    setIsEmailOpen(!isEmailOpen);
+  };
 
-                        <label htmlFor="password">Senha:</label><br />
-                        <input 
-                            id='password-prof'
-                            type="password" 
-                            placeholder="Digite sua senha" /><br />
-                         <button id='button-prof'>Entrar</button>
-                    </form>
-                </div>
+  const handleEmailClose = () => {
+    setIsEmailOpen(false);
+    setIsAuthOpen(true);
+  };
+
+  const handleAuthClose = () => {
+    setIsAuthOpen(false);
+    setIsSenhaOpen(true);
+  };
+
+  const handleSenhaClose = () => {
+    setIsSenhaOpen(false);
+    setIsFeedbackOpen(true);
+  };
+
+  return (
+    <>
+      <Button />
+      <section className="login-container">
+        <div className="login-container-content-prof">
+          <img className="imgForm-profissional" src={Img_login_profissional} alt="" />
+          <div className="login">
+            <div className="logo_login">
+              <img src={Logoicon} alt="" />
             </div>
-        </>
-    )
+            <form action="" className="form-login">
+              <h2 id="adp">Área profissional de saúde</h2>
+              <h3 id="amc">Acessar a minha conta</h3>
+              <div>
+                <label htmlFor="email">E-mail:</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="e-mail"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <div>
+                <label htmlFor="password">Código de acesso:</label>
+                <br />
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <div>
+                <label htmlFor="password">Senha:</label>
+                <br />
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  placeholder="Digite sua senha"
+                />
+              </div>
+              <p id="ems">
+                <a id="esqueci-profissional" href="#" onClick={togglePasswordReset}>
+                  Esqueci minha senha
+                </a>
+              </p>
+              <div className="btn-entrar-prof">
+              <button id="button_login" onClick={() => navigation('/areapaciente')}>Entrar</button>
+              </div>
+              <p id="ntc">
+                Não tem uma conta?{" "}
+                <a href="" onClick={() => navigation("/cadastro")}>
+                  Cadastre-se
+                </a>
+              </p>
+            </form>
+          </div>
+        </div>
+        {isEmailOpen && <Email onClose={handleEmailClose} />}
+        {isAuthOpen && <Autenticacao onClose={handleAuthClose} />}
+        {isSenhaOpen && <Redefinir onClose={handleSenhaClose} />}
+        {isFeedbackOpen && (
+          <Feedback onClose={() => setIsFeedbackOpen(false)} />
+        )}
+      </section>
+    </>
+  );
 }

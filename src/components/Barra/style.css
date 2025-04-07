@@ -1,26 +1,20 @@
-.barraLayout{
-    background-color: #1E94A2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px;;
-    width: 83%;
-    height: 100px;
-    position: relative;
-    top: 100px;
-    left: 17%;
-    z-index: 999;
+.barra-layout-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1E94A2;
+  padding: 10px 20px;
+  border-bottom: 1px;
+  width: 79.9vw;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-38%, -386%);
 }
 
 .barra-item {
-    color: white;
-    font-size: 2rem;
-    margin-left: 20px;
-    cursor: pointer;
-  }
-  
-  .barra-item:hover {
-    color: black;
-  }
-  
+  color: white;
+  font-size: 2rem;
+  margin-left: 20px;
+}

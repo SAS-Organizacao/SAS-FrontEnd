@@ -1,10 +1,9 @@
-import './areaprofissional.css';
+import "./areaprofissional.css";
 
 export default function Area_profissional() {
-
   return (
     <>
-      <div className='container-area-profissional'>
+      <div className="container-area-profissional">
         <div className="agendamentos-container">
           <div className="tabela-agendamentos">
             <div className="linha cabecalho">
@@ -62,7 +61,7 @@ export default function Area_profissional() {
           </div>
         </div>
 
-        <div className='container-atend'>
+        <div className="container-atend">
           <div className="tabela-atendimentos">
             <div className="linha cabecalho">
               <div className="coluna paciente">Últimos atendimentos</div>
@@ -86,7 +85,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Maria Aparecida de Souza   </div>
+              <div className="coluna paciente">Maria Aparecida de Souza </div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 {/* <span className="horario">08:00</span> */}

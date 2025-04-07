@@ -1,13 +1,23 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.area-paciente-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107.6vh;
+    background-image: linear-gradient(to bottom right, #fff, #1E94A2);
 }
 
-.paragrafo {
-    position: absolute;
-    left: 900px;
-    bottom: 300px;
-    color: #808080;
-    font-size: 20px;
-}
+ .area-paciente-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .area-paciente-content p {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    font-size: 30px;
+    font-weight: 300;
+    color: #000000d0;
+ }

@@ -27,13 +27,11 @@ import Area_profissional from "./pages/Area_profissional";
 import ResultadoExames from "./pages/Resultado_exames";
 import Historicoconsultas from "./components/Histórico_consultas";
 import Infoprontuario from "./components/Info_prontuario";
-import Botoes_prontuario_med from "./components/Botoes_prontuario_med";
 import Menu_lateral_prof from "./components/Menu_lateral_prof";
 import Novo_atendimento from "./components/Novo_atendimento";
 import Novo_exame from "./components/Novo_exame";
 import Atendimento from "./components/Atendimento";
-
-
+import Botoes_prontuario_med from "./components/Botoes_prontuario_med";
 
 function App() {
   return (
@@ -43,6 +41,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/sobre" element={<Sobre />}></Route>
+        <Route path="/areapaciente" element={<AreaPaciente />}></Route>
         <Route path="/loginprofissional" element={<Login_profissional />}></Route>
         <Route path="/cadastro" element={<Cadastro />}></Route>
 
@@ -58,7 +57,7 @@ function App() {
 
         {/* Componenetes para layout */}
         <Route path="/barra" element={<Barra />}></Route>
-
+        
         {/* Rotas menu lateral do sistema */}
         <Route path="/areapaciente" element={<AreaPaciente />}></Route>
         <Route path="/perfil" element={<Perfil />}></Route>
@@ -69,24 +68,24 @@ function App() {
         {/* Rotas de componentes para as páginas */}
         <Route path="/historicoconsultas" element={<Historicoconsultas />}></Route>
         <Route path="/infoprontuario" element={<Infoprontuario />}></Route>
-        <Route path="/botoes-prontuario-med" element={<Botoes_prontuario_med />}></Route>
         <Route path="/novoatendimento" element={<Novo_atendimento/>}></Route>
         <Route path="/novoexame" element={<Novo_exame/>}></Route>
         <Route path="/atendimento" element={<Atendimento/>}></Route>
-
-        <Route path='/resultadoexames' element={<Resultado_exames/>} ></Route>
-        
+        <Route path='/resultadoexames' element={<Resultado_exames/>} ></Route>    
         <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
-
         <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
-
         <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
-
-        <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route>
-
+        <Route path='/navbar-logada' element={<NavbarLogada/>} ></Route>
         <Route path='/barra_med' element={<Barra_med/>} ></Route>
 
-
+        {/* <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route> */}
+        <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>
+        <Route path="/agendarconsulta" element={<Agendar_consulta />}></Route>
+        <Route path="/perfil" element={<Perfil />}></Route>
+        <Route path='/resultadoexames' element={<Resultado_exames/>} ></Route>
+        <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
+        <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
+        <Route path='/botao-prontuario-med' element={<Botoes_prontuario_med/>} ></Route>
       </Routes>
     </BrowserRouter>
   );
