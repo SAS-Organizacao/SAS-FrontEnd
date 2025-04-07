@@ -11,7 +11,7 @@ export default function Novo_atendimento() {
             <p>Iniciar novo atendimento</p>
             {/* <img src={Novoatend} alt="" width={20} height={20} /> */}
         </button>
-            <div className='container-atend'>
+            <div className='atendimento-med-content'>
                 <h4>Histórico de Consultas</h4>
             </div>
         </div>
