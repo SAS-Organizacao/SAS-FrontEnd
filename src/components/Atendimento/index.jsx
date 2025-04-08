@@ -7,32 +7,31 @@ export default function Atendimento() {
     return (
         <>
             <div className='container-atendimento'>
-                <div className='atend-paciente'>
-                    <div className='icon-paciente'>
-                        <img src={IconAtendimento} alt="" />
-                    </div>
-                    <div className='paciente-info'>
-                        <h3>Judite Cunha Gomes</h3>
-                        <p>Idade:</p>
-                        <p>Primeira consulta em:</p>
-                        <p>Tipo sanguíneo:</p>
-                    </div>
-
-                </div>
-                <div className='container-anamnese'>
-                    <div className='anamnese'>
-                        <div className='anamnese-data'>
-                            <p>Quinta-feira, 20 de Fevereiro de 2025</p>
+                <div className='atendimento-queixa-content'>
+                    <div className='atend-paciente'>
+                        <div className='icon-paciente'>
+                            <img src={IconAtendimento} alt="" />
                         </div>
-                        <div className='queixa-paciente'>
-                            <label htmlFor="">Queixa Principal:</label><br />
-                            <input type="text" name="" id="queixa-caixa" /><br />
-                            <label htmlFor="">Anmenese:</label><br />
-                            <textarea name="" rows={6} id="anmenese-caixa"></textarea>
+                        <div className='paciente-info'>
+                            <h3>Judite Cunha Gomes</h3>
+                            <p>Idade:</p>
+                            <p>Primeira consulta em:</p>
+                            <p>Tipo sanguíneo:</p>
+                        </div>
 
-                            <button>Salvar</button>
-    
-
+                    </div>
+                    <div className='container-anamnese'>
+                        <div className='anamnese'>
+                            <div className='anamnese-data'>
+                                <p>Quinta-feira, 20 de Fevereiro de 2025</p>
+                            </div>
+                            <div className='queixa-paciente'>
+                                <label htmlFor="">Queixa Principal:</label>
+                                <input type="text" name="" id="queixa-caixa" />
+                                <label htmlFor="">Anmenese:</label>
+                                <textarea name="" rows={6} id="anmenese-caixa"></textarea>
+                                <div className='btn-queixa-paciente'><button>Salvar</button></div>
+                            </div>
                         </div>
                     </div>
                 </div>

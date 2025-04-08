@@ -1,26 +1,37 @@
 .container-atendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.atendimento-queixa-content {
     border: #1E94A2 1px solid;
-    width: 1000px;
-    height: 700px;
+    width: 1200px;
+    height: -40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 .atend-paciente {
     display: flex;
-    height: 160px;
+    height: 140px;
     /* background-color: blueviolet; */
     gap: 20px;
     padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: (0%, 20%);
+    margin-left: 5px;
     /* margin: 10px 10px */
 }
 
 .container-anamnese {
     background-color: #1E94A2 ;
     /* width: 1000px; */
-    height: 700px;
+    height: 500px;
 }
 
 .anamnese {
@@ -40,32 +51,42 @@
 
 .queixa-paciente {
     padding: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #queixa-caixa {
     width: 300px;
+    margin: 10px 0 20px 0;
 }
 
 #anmenese-caixa {
     width: 100%;
     height: 150px;
+    margin: 10px 0 20px 0;
 }
 
-.queixa-paciente button {
+.anamnese button {
     background-color: #004B54;
+    max-width: 20%;
     color: #fff;
     border: none;
-    align-items: center;
-    justify-content: center;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
     cursor: pointer; 
-    
-    gap: 15px;
-    /* height: 50px; */
+    /* gap: 15px; */
     border-radius: 24px;
     padding: 10px 60px;
-    color: #fff;
     transition: transform 0.5s ease, background-color 0.5s ease;
-    border: none;
+}
+
+.btn-queixa-paciente {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, 0%);
+    margin-top: 20px;
 }
 
 .queixa-paciente button:hover {
