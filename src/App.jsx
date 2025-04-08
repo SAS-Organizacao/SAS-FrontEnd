@@ -22,6 +22,7 @@ import Barra from "./components/Barra";
 import AreaPaciente from "./pages/Area_paciente/areapac";
 import Sobre from "./pages/Sobre/sobre";
 import Botoes_prontuario_med from './components/Botoes_prontuario_med';
+import AreaMedico from "./pages/Area_medico";
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
         <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route>
 
         <Route path='/barra_med' element={<Barra_med/>} ></Route>
+
+
+        <Route path='/areamedico' element={<AreaMedico/>} ></Route>
 
       </Routes>
     </BrowserRouter>

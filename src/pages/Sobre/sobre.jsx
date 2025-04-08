@@ -1,6 +1,8 @@
 import Button from '../../components/Navbar'
 import '../Sobre/sobre.css'
-
+// import SobreUBS from '../../assets/images/img-sobre01.svg'
+// import SobreMedico from '../../assets/images/img-sobre02.svg'
+// import SobreMedPac from '../../assets/images/img-sobre03.svg'
 
 export default function Sobre() {
 
@@ -14,7 +16,7 @@ export default function Sobre() {
                 </div>
                 <div className='sobre-nos'>
                     <p>   
-                        Somos um sistema de agendamento e 
+                            Somos um sistema de agendamento e 
                         <br/>armazenamento de histórico integrado a 
                         <br/>postos de saúde da cidade do Recife.
                         <br/>
@@ -29,6 +31,35 @@ export default function Sobre() {
                         <br/>mais praticidade e facilidade para todos os 
                         <br/>usuários.
                     </p>
+
+                    {/* <img src={SobreUBS} alt="" /> */}
+
+                </div>
+
+                <div className='img-texto-sobre'>
+                    {/* <div>
+                    <img src={SobreMedico} alt="" />
+
+                    <img src={SobreMedPac} alt="" />
+                    </div> */}
+
+                </div>
+
+                <div className="titulo-h2">
+
+                <h2 className="equipe-title">Equipe médica <br/>especializada</h2>
+
+                </div>
+
+      
+                <div className="equipe-section">  
+
+                    <ul className="equipe-beneficios">
+                    <li>Tecnologia de ponta</li>
+                    <li>Design intuitivo</li>
+                    <li>Praticidade</li>
+                    </ul>
+
                 </div>
 
                
