@@ -4,8 +4,12 @@ import Iconcalendario from "../../assets/images/icon-calendario.svg";
 import Iconespecialidade from "../../assets/images/icon-especialidade.svg";
 import Iconmedico from "../../assets/images/icon-medico.svg";
 import Iconposto from "../../assets/images/icon-posto.svg";
+import Button from "../Navbar";
+import Menulateral from "../Menu_lateral";
+import Barra_historico_consulta from "../Barra_historico_consulta";
+import NavbarLogada from "../Navbar_logada";
 
-export default function Historicoconsultas() {
+export default function Historico_consultas() {
   const consultas = [
     {
       data: "Quarta-feira, 22/01/2025 às 08:07",
@@ -50,6 +54,9 @@ export default function Historicoconsultas() {
 
   return (
     <>
+      <NavbarLogada/>
+      <Menulateral/>
+      <Barra_historico_consulta/>
       <div className="historico-container">
         <div className="historico-cards">
           {consultas.map((consulta, index) => (
