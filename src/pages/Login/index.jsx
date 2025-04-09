@@ -1,5 +1,6 @@
 import Button from "../../components/Navbar";
-import Logo from "../../assets/images/logo-sas.svg";
+// import Logo from "../../assets/images/logo-sas.svg";
+import Logoicon from "../../assets/images/logo-sas-png.png"
 import Img_login from "../../assets/images/imagem-login.svg";
 
 import { Navigate, useNavigate } from "react-router";
@@ -47,7 +48,7 @@ export default function Login() {
           <img className="imgForm" src={Img_login} alt="" />
           <div className="login">
             <div className="logo_login">
-              <img src={Logo} alt="" width={57.75} height={66} />
+              <img src={Logoicon} alt="" />
             </div>
             <form action="" className="form-login">
               <h2 id="adp">Área do Paciente</h2>

@@ -1,51 +1,66 @@
 import Button from "../../components/Navbar";
 import "../Cadastro/cadastro.css";
-import LogoCadastro from "../../assets/images/logo-sas.svg";
-import CadastroImg from "../../assets/images/cadastro-img.svg";
+import Logoicon from "../../assets/images/logo-sas-png.png";
+import CadastroImg from "../../assets/images/cadastro2.jpeg";
+import Cadastro1 from "../../assets/images/cadastro1.jpg";
+
 import { useState } from "react";
 
-// navegação	
+// navegação
 import { useNavigate } from "react-router";
+import { api } from "../../services/api";
 
 export default function Cadastro() {
-
   // navegação
   const navigation = useNavigate();
-
+  // estados de cadastro
   const [nome, setNome] = useState("");
-
   const [cpf, setCpf] = useState("");
-
   const [email, setEmail] = useState("");
-
   const [senha, setSenha] = useState("");
-
   const [confirme_Senha, setConfirme_Senha] = useState("");
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-    if (!nome.trim()) {
-      alert("Por favor, digite seu nome.");
-      return;
-    }
-    if (!cpf.trim()) {
-      alert("Por favor, digite seu CPF.");
-      return;
-    }
-    if (!senha.trim()) {
-      alert("Por favor, digite uma senha.");
-      return;
-    }
-    if (!confirme_Senha.trim()) {
-      alert("Por favor, confirme sua senha.");
-      return;
-    }
 
-    if (!email.trim()) {
-      alert("Por favor, Digite seu e-mail.");
-      return;
-    }
     console.log({ nome, cpf, email, senha, confirme_Senha });
+
+    await api
+      .post("/paciente/create", {
+        nome,
+        cpf,
+        email,
+        senha,
+        confirme_Senha,
+      })
+      .then((response) => {
+        navigation("/login");
+      })
+      .catch((error) => {
+        alert("Erro ao cadastrar, tente novamente.");
+        console.log(error);
+      });
+
+    // try {
+    //   const response = await api.post("/paciente/create", {
+    //     nome,
+    //     cpf,
+    //     email,
+    //     senha,
+    //     confirme_Senha, // Nome correto do campo
+    //   });
+    //   navigation("/login");
+    // } catch (error) {
+    //   alert("Erro ao cadastrar, tente novamente.");
+    //   console.error("Detalhes do erro:", error);
+
+    //   // Adicione mais detalhes para depuração
+    //   if (error.response) {
+    //     console.error("Resposta do servidor:", error.response.data);
+    //   } else if (error.request) {
+    //     console.error("Nenhuma resposta recebida");
+    //   }
+    // }
   }
 
   return (
@@ -56,7 +71,7 @@ export default function Cadastro() {
         <div className="cadastroContent">
           <form className="formContent" onSubmit={handleSubmit}>
             <div className="logoCadastro">
-              <img src={LogoCadastro} alt="logo-symbol"></img>
+              <img src={Logoicon} alt="logo-symbol"></img>
             </div>
 
             <h2>Paciente - Cadastre-se</h2>
@@ -128,12 +143,18 @@ export default function Cadastro() {
                 <input type="checkbox" />
                 <p>
                   Estou de acordo com a <a href="">Politica de Privacidade</a>{" "}
-                  <link rel="stylesheet" onClick={() => navigation("/login")} />
+                  {/* <link rel="stylesheet" onClick={() => navigation("/login")} /> */}
                 </p>
               </div>
 
               <div className="btn-cadastro">
-                <button id="button-cadastro" type="submit" onClick={() => {navigation("/login")}}>
+                <button
+                  id="button-cadastro"
+                  type="submit"
+                  onClick={() => {
+                    navigation("/login");
+                  }}
+                >
                   Cadastrar
                 </button>
               </div>
@@ -143,13 +164,11 @@ export default function Cadastro() {
               </p>
             </div>
           </form>
-
           <img
-            src={CadastroImg}
             className="imgCadastro"
-            width={1338.41}
-            height={710}
-          ></img>
+            src={CadastroImg}
+            alt="Imagem de cadastro"
+          />
         </div>
       </div>
     </>

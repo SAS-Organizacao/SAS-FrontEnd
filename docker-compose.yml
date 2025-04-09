@@ -1,0 +1,13 @@
+services:
+  frontend:
+    container_name: SAS-frontend
+    build: .
+    volumes:
+      - './:/app'
+      - '/app/node_modules'
+    ports:
+      - 3001:3000
+    stdin_open: true
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
