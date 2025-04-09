@@ -22,8 +22,10 @@ import Barra from "./components/Barra";
 import AreaPaciente from "./pages/Area_paciente/areapac";
 import Sobre from "./pages/Sobre/sobre";
 
+import AreaMedico from "./pages/Area_medico";
+
 import Login_profissional from './pages/Login_profissional';
-import Area_profissional from "./pages/Area_profissional";
+import Area_profissional from "./components/Area_profissional";
 import ResultadoExames from "./pages/Resultado_exames";
 import Historicoconsultas from "./components/Histórico_consultas";
 import Infoprontuario from "./components/Info_prontuario";
@@ -33,6 +35,7 @@ import Novo_exame from "./components/Novo_exame";
 import Atendimento from "./components/Atendimento";
 import Botoes_prontuario_med from "./components/Botoes_prontuario_med";
 import Documentos from "./components/Documentos";
+
 
 function App() {
   return (
@@ -80,6 +83,9 @@ function App() {
         <Route path='/barra_med' element={<Barra_med/>} ></Route>
         <Route path='/documentos' element={<Documentos/>} ></Route>
 
+
+
+        <Route path='/areamedico' element={<AreaMedico/>} ></Route>
 
         {/* <Route path='/navbar_logada' element={<NavbarLogada/>} ></Route> */}
         <Route path='/infoprontuario' element={<Info_prontuario/>} ></Route>

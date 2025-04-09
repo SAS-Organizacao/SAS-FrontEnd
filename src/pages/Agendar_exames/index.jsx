@@ -9,6 +9,7 @@ export default function AgendarExames() {
       <Barra/>
       <Menu_lateral/>
 
-    </>
-  );
+
+    </> 
+    )
 }
