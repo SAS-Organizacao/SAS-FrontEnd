@@ -34,6 +34,7 @@ import Novo_atendimento from "./components/Novo_atendimento";
 import Novo_exame from "./components/Novo_exame";
 import Atendimento from "./components/Atendimento";
 import Botoes_prontuario_med from "./components/Botoes_prontuario_med";
+import Documentos from "./components/Documentos";
 
 
 function App() {
@@ -80,6 +81,8 @@ function App() {
         <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
         <Route path='/navbar-logada' element={<NavbarLogada/>} ></Route>
         <Route path='/barra_med' element={<Barra_med/>} ></Route>
+        <Route path='/documentos' element={<Documentos/>} ></Route>
+
 
 
         <Route path='/areamedico' element={<AreaMedico/>} ></Route>
