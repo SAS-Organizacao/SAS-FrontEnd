@@ -8,20 +8,20 @@ export default function Botoes_prontuario_med() {
     <>
       <div className="botoes-prontuario-medico-container">
         <div className="botoes-prontuario-medico-content">
-        <div className="btn-prontuario-medico">
+        <button className="btn-prontuario-medico" onClick={() => window.location.href = "/novo-atendimento-medico"}>
           <img src={ImgAtendimento} alt="" />
           <h1>Atendimento</h1>
-        </div>
+        </button>
 
-        <div className="btn-prontuario-medico">
+        <button className="btn-prontuario-medico" onClick={() => window.location.href = "/exames"}>
           <img src={ImgExames} alt="" />
           <h1>Exames</h1>
-        </div>
+        </button>
 
-        <div className="btn-prontuario-medico">
+        <button className="btn-prontuario-medico" onClick={() => window.location.href = "/documentos"}>
           <img src={ImgDocumento} alt="" />
           <h1>Documentos</h1>
-        </div>
+        </button>
         </div>
       </div>
     </>

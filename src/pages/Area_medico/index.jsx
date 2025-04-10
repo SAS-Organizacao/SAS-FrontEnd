@@ -7,11 +7,12 @@ import "../../services/styles/global.css"
 import Barra_medico from "../../components/Barra-med";
 import Area_profissional from "../../components/Area_profissional";
 import Menulateralprof from "../../components/Menu_lateral_prof";
+import Navbar_logada_medico from "../../components/Navbar-logada-medico";
 
 export default function AreaMedico() {
     return (
         <>
-            <NavbarLogada/>
+            <Navbar_logada_medico/>
             <div className="area-medico-container">
                 <Menulateralprof/>
                 <Barra_medico/>

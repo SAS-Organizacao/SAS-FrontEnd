@@ -10,9 +10,9 @@
   flex-direction: column;
   top: 20%;
   left: 50%;
-  transform: translate( -80%, 10%);
-  width:600px;
-  height:500px;
+  transform: translate( -50%, 10%);
+  width:700px;
+  height:600px;
 }
 
 .info-paciente {

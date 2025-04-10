@@ -11,11 +11,11 @@ export default function Barra_medico () {
     const navigate = useNavigate();
 
     const handleSearch = (event) => {
-        event.preventDefault(); // Prevent the default form submission behavior
-        navigate(`/medico/pesquisar/${searchTerm}`); // Redirect to the search page with the search term
+        event.preventDefault();
+        navigate(`/medico/pesquisar/${searchTerm}`); 
     }
     const handleInputChange = (event) => {
-        setSearchTerm(event.target.value); // Update the search term state
+        setSearchTerm(event.target.value); 
     };
 
     return (
