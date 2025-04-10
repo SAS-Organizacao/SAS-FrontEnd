@@ -1,0 +1,48 @@
+.barra-layout-medico {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background-color: #1E94A2;
+  padding: 10px 20px;
+  width: 80%;
+  position: fixed;
+  top: 11.1%; 
+  left: 20.2%;
+  height: 100px;
+  z-index: 1; 
+  box-sizing: border-box; /
+}
+
+.barra-item-medico h2 {
+  letter-spacing: 0.5rem;
+  font-size: clamp(1rem, 2vw, 2rem); /* Tamanho responsivo */
+  font-weight: 400;
+  color: white;
+  margin: 0; /* Remove margens padrão */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.barra-pesquisar-medico {
+  display: flex;
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 15%;
+}
+
+.barra-pesquisar-medico input {
+  flex-grow: 1; /* Ocupa todo espaço disponível */
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 0 10px;
+  min-width: 0; /* Permite que o input diminua */
+}
+
+.lupa {
+  width: 20px;
+  height: 20px;
+  cursor: pointer; /* Mostra que é clicável */
+}

@@ -38,6 +38,7 @@ import Documentos from "./components/Documentos";
 import Prontuario_med from "./pages/Prontuario_med";
 import Barra_medico from "./components/Barra-med";
 import Menulateralprof from "./components/Menu_lateral_prof";
+import Novo_atendimento_medico from "./pages/Novo-atendimento";
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
         <Route path="/areapaciente" element={<AreaPaciente />}></Route>
         <Route path="/loginprofissional" element={<Login_profissional />}></Route>  
         <Route path="/cadastro" element={<Cadastro />}></Route>
+        <Route path='/novo-atendimento-medico' element={<Novo_atendimento_medico/>} ></Route> 
 
         {/* Rotas dos componentes modal */}
         <Route path="/aut" element={<Autenticacao />}></Route>

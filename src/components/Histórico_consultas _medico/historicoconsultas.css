@@ -1,0 +1,44 @@
+/* .historico-container-medico {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+.historico-cards-medico {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  position: fixed;
+  transform: translate(-30%, -10%);
+}
+
+.card-consulta {
+  background-color: #EAEAEA;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card-consulta:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-consulta p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.card-consulta div {
+  display: flex;
+  gap: 10px;
+}
+
+.hist-calendario img {
+  margin: 0 5px 0 0;
+}

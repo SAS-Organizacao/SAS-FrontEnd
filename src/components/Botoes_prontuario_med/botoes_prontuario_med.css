@@ -4,14 +4,27 @@
     flex-direction: column; 
     top: 50%;
     left: 50%;
-    transform: translate(195%, 10%);
+    transform: translate(270%, 10%);
 }
 
 .btn-prontuario-medico{
     color: #000000d0;
     background-color: #D9D9D9;
-    width: 500px;
-    height: 150px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;;
+}
+
+.btn-prontuario-medico{
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,27 +36,15 @@
 
 .btn-prontuario-medico{
     background-color: #D9D9D9;
-    width: 500px;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 40px 0 0 40px;
-    flex-direction: column;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-.btn-prontuario-medico{
-    background-color: #D9D9D9;
-    width: 500px;
-    height: 150px;
+    width: 400px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 40px 0 0 40px;
     flex-direction: column;
     transition: transform 0.5s ease, background-color 0.5s ease;
+    border: none;
 }
 
 .btn-prontuario-medico:hover {
@@ -51,3 +52,6 @@
     transform: translateY(-5px);
 }
 
+.btn-prontuario-medico h1 {
+    font-weight: 450;
+}

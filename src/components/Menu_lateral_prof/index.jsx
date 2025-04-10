@@ -30,12 +30,7 @@ export default function Menulateralprof() {
                         <a href="" onClick={() => {navigate('/prontuario-medico')}} >Prontuário</a>
 
                     </div>
-                    
-                    {/* <div className="menu-column-prof">
-                        <img src={Imgconsultas} alt="" width={31} />
-                        <a href="/agendarconsulta">Consultas</a>
-                    </div> */}
-
+                     
                     <div className="menu-column-prof">
                         <img src={Imgexames} alt="" width={31} />
                         <a href="">Exames</a>
