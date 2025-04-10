@@ -12,7 +12,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Judite Cunha Bezerra</div>
+              <div className="coluna paciente"><p>Judite Cunha Bezerra</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-consulta">Consulta</span>
                 <span className="horario">10:00</span>
@@ -20,7 +20,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Vera Lúcia de Freitas</div>
+              <div className="coluna paciente"><p>Vera Lúcia de Freitas</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 <span className="horario">11:00</span>
@@ -28,7 +28,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">José Francisco da Silva</div>
+              <div className="coluna paciente"><p>José Francisco da Silva</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 <span className="horario">11:30</span>
@@ -36,7 +36,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Lúcia Maria Gomes</div>
+              <div className="coluna paciente"><p>Lúcia Maria Gomes</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-consulta">Consulta</span>
                 <span className="horario">13:00</span>
@@ -44,7 +44,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Nelson Antônio de Almeida</div>
+              <div className="coluna paciente"><p>Nelson Antônio de Almeida</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-consulta">Consulta</span>
                 <span className="horario">14:00</span>
@@ -52,7 +52,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Ana Beatriz Oliveira</div>
+              <div className="coluna paciente"><p>Ana Beatriz Oliveira</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 <span className="horario">14:30</span>
@@ -61,7 +61,7 @@ export default function Area_profissional() {
           </div>
         </div>
 
-        <div className="container-atend">
+        <div className="container-atendimento-medico">
           <div className="tabela-atendimentos">
             <div className="linha cabecalho">
               <div className="coluna paciente">Últimos atendimentos</div>
@@ -69,7 +69,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Manoel Ferreira dos Santos</div>
+              <div className="coluna paciente"><p>Manoel Ferreira dos Santos</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-consulta">Consulta</span>
                 {/* <span className="horario">09:00</span> */}
@@ -77,7 +77,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Ivete Lopes de Souza</div>
+              <div className="coluna paciente"><p>Ivete Lopes de Souza</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 {/* <span className="horario">08:30</span> */}
@@ -85,7 +85,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Maria Aparecida de Souza </div>
+              <div className="coluna paciente"><p>Maria Aparecida de Souza</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 {/* <span className="horario">08:00</span> */}
@@ -93,7 +93,7 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Mariana de Lima Barbosa</div>
+              <div className="coluna paciente"><p>Mariana de Lima Barbosa</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 {/* <span className="horario">07:30</span> */}
@@ -101,12 +101,21 @@ export default function Area_profissional() {
             </div>
 
             <div className="linha">
-              <div className="coluna paciente">Patrícia Rodrigues Oliveira</div>
+              <div className="coluna paciente"><p>Patrícia Rodrigues Oliveira</p></div>
               <div className="coluna tipo-horario">
                 <span className="tipo-retorno">Retorno</span>
                 {/* <span className="horario">07:00</span> */}
               </div>
             </div>
+
+            <div className="linha">
+              <div className="coluna paciente"><p>Daniel Barbosa Caldeira</p></div>
+              <div className="coluna tipo-horario">
+                <span className="tipo-retorno">Retorno</span>
+                {/* <span className="horario">07:00</span> */}
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

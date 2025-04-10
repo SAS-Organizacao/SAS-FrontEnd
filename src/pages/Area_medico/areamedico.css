@@ -1,0 +1,9 @@
+.area-medico-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom right, #fff, #1E94A2);
+}

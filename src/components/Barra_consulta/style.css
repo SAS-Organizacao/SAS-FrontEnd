@@ -13,14 +13,8 @@
   transform: translate(-38%, -386%);
 }
 
-.barra-item {
+.barra-consulta-layout {
   color: white;
   font-size: 2rem;
   margin-left: 20px;
-}
-
-.barra-item h2 {
-  letter-spacing: 0.5rem;
-  font-size: 2rem;
-  font-weight: 400;
-}
+} 

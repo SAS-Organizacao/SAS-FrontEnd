@@ -23,7 +23,7 @@ export default function Cadastro() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log({ nome, cpf, email, senha, confirme_Senha });
+    console.log({ nome, cpf, email, senha });
 
     await api
       .post("/paciente/create", {
@@ -41,27 +41,27 @@ export default function Cadastro() {
         console.log(error);
       });
 
-    // try {
-    //   const response = await api.post("/paciente/create", {
-    //     nome,
-    //     cpf,
-    //     email,
-    //     senha,
-    //     confirme_Senha, // Nome correto do campo
-    //   });
-    //   navigation("/login");
-    // } catch (error) {
-    //   alert("Erro ao cadastrar, tente novamente.");
-    //   console.error("Detalhes do erro:", error);
+  //   try {
+  //     const response = await api.post("/paciente/create", {
+  //       nome,
+  //       cpf,
+  //       email,
+  //       senha,
+  //       confirme_Senha, // Nome correto do campo
+  //     });
+  //     navigation("/login");
+  //   } catch (error) {
+  //     alert("Erro ao cadastrar, tente novamente.");
+  //     console.error("Detalhes do erro:", error);
 
-    //   // Adicione mais detalhes para depuração
-    //   if (error.response) {
-    //     console.error("Resposta do servidor:", error.response.data);
-    //   } else if (error.request) {
-    //     console.error("Nenhuma resposta recebida");
-    //   }
-    // }
-  }
+  //     // Adicione mais detalhes para depuração
+  //     if (error.response) {
+  //       console.error("Resposta do servidor:", error.response.data);
+  //     } else if (error.request) {
+  //       console.error("Nenhuma resposta recebida");
+  //     }
+  //   }
+   }
 
   return (
     <>

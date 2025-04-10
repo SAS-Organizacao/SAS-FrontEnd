@@ -1,27 +1,31 @@
 .historico-container {
-  position: absolute;
-  top: 250px;
-  left: 395px;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to bottom right, #fff, #1E94A2);
 }
 
 .historico-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, 05%);
 }
 
 .card-consulta {
-  background-color: #ffffff;
+  background-color: #EAEAEA;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .card-consulta:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 

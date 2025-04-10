@@ -25,7 +25,7 @@ export default function Menulateral() {
 
                     <div className="menu-column">
                         <img src={Imgprontuario} alt="" width={31} />
-                        <a href="">Prontuário</a>
+                        <a href="" onClick={() => {navigation('/')}}>Prontuário</a>
 
                     </div><div className="menu-column">
                         <img src={Imgconsultas} alt="" width={31} />
@@ -34,22 +34,22 @@ export default function Menulateral() {
 
                     <div className="menu-column">
                         <img src={Imgexames} alt="" width={31} />
-                        <a href="">Exames</a>
+                        <a href="" onClick={() => {navigation('/exames-agendamento')}}>Exames</a>
                     </div>
 
                     <div className="menu-column">
                         <img src={Imgresultado} alt="" width={31} />
-                        <a href="">Resultado de exame</a>
+                        <a href="" onClick={() => {navigation('/resultadoexames')}}>Resultado de exame</a>
                     </div>
 
                     <div className="menu-column">
                         <img src={Imghistorico} alt="" width={31} />
-                        <a href="">Histórico de consultas</a>
+                        <a href="" onClick={() => {navigation('/historico-consulta')}}>Histórico de consultas</a>
                     </div>
 
                     <div className="menu-column">
                         <img src={Imgperfil} alt="" width={31} />
-                        <a href="">Perfil</a>   
+                        <a href="" onClick={() => {navigation('/perfil')}}>Perfil</a>   
                     </div>
 
                     <div className="menu-column">

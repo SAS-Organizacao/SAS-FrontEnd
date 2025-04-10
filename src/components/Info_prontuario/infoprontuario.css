@@ -1,4 +1,16 @@
+.inforesumo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .inforesumo {
+  display: flex;
+  flex-direction: column;
+  top: 20%;
+  left: 50%;
+  transform: translate( -80%, 10%);
   width:600px;
   height:500px;
 }
@@ -15,6 +27,10 @@
   color: #1E94A2;
 }
 
+.info p {
+  color: #000000d0;
+}
+
 .info-agendamentos {
   padding: 20px;
   border-bottom: #1E94A2 1px solid;
@@ -26,7 +42,12 @@
 } 
 
 .info-agendamentos h4 {
+  color: #000000d0;
   margin: 0 0 10px 0;
+}
+
+.info-agendamentos p {
+  color: #000000d0;
 }
 
 .info-obs {
@@ -35,12 +56,18 @@
   margin: 10px 10px
 }
 
+.info-obs p {
+  color: #000000d0;
+  margin: 0 0 10px 0;
+}
+
 .info-obs div {
   display: flex;
   align-items: center;
 }
 
 .info-obs h4 {
+  color: #000000d0;
   margin: 0 0 10px 0;
 }
 

@@ -88,7 +88,7 @@ export default function Login_profissional() {
                 </a>
               </p>
               <div className="btn-entrar-prof">
-              <button id="button_login" onClick={() => navigation('/areapaciente')}>Entrar</button>
+              <button id="button_login" onClick={() => navigation('/area-medico')}>Entrar</button>
               </div>
               <p id="ntc">
                 Não tem uma conta?{" "}

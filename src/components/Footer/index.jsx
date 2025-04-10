@@ -1,6 +1,5 @@
 import '../Footer/footer.css'
 import Logoicon from "../../assets/images/logo-sas-png.png"
-import Envioicon from "../../assets/images/icon-envio.svg"
 
 export default function Footer() {
     

@@ -1,21 +1,15 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-.botoes {
+.botoes-prontuario-medico-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column; 
     top: 50%;
     left: 50%;
-    transform: translate(74%, 60%);
+    transform: translate(195%, 10%);
 }
 
-.btn-atendimento{
-    background-color: #E2E2E2;
+.btn-prontuario-medico{
+    color: #000000d0;
+    background-color: #D9D9D9;
     width: 500px;
     height: 150px;
     display: flex;
@@ -24,10 +18,11 @@
     border-radius: 40px 0 0 40px;
     flex-direction: column;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
-.btn-exames{
-    background-color: #E2E2E2;
+.btn-prontuario-medico{
+    background-color: #D9D9D9;
     width: 500px;
     height: 150px;
     display: flex;
@@ -36,10 +31,11 @@
     border-radius: 40px 0 0 40px;
     flex-direction: column;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
-.btn-documentos{
-    background-color: #E2E2E2;
+.btn-prontuario-medico{
+    background-color: #D9D9D9;
     width: 500px;
     height: 150px;
     display: flex;
@@ -47,5 +43,11 @@
     align-items: center;
     border-radius: 40px 0 0 40px;
     flex-direction: column;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.btn-prontuario-medico:hover {
+    background-color: #a7a7a7;
+    transform: translateY(-5px);
 }
 

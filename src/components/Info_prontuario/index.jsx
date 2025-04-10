@@ -6,6 +6,7 @@ import Agendconsulta from '../../assets/images/icon-info-consultas.svg'
 export default function Infoprontuario() { 
 
     return (
+      <div className='inforesumo-container'>
       <div className='inforesumo'>
         <div className='info-paciente'> 
           <div className='icon-info'>
@@ -30,6 +31,7 @@ export default function Infoprontuario() {
           <div> <img src={Obs} alt="" /> <p>Diabetes</p></div>
           <div> <img src={Obs} alt="" /> <p>Hiperetensão</p></div>
        </div>
+      </div>
       </div>
     )
 }

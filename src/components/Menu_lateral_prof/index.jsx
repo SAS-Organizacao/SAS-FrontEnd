@@ -9,8 +9,11 @@ import Imgperfil from '../../assets/images/icon-perfil.svg'
 import Imgsegurança from '../../assets/images/icon-segurança.svg'
 import Imgsair from '../../assets/images/icon-sair.svg'
 
+import { useNavigate } from 'react-router'
+
 export default function Menulateralprof() {
 
+    const navigate = useNavigate()
 
     return (
         <>
@@ -19,17 +22,19 @@ export default function Menulateralprof() {
 
                     <div className="menu-column-prof">
                         <img src={Imgpaciente} alt="" width={31} />
-                        <a href="">Área do Médico</a>
+                        <a href="" onClick={() => {navigate('/area-medico')}}>Área do Médico</a>
                     </div>
 
                     <div className="menu-column-prof">
                         <img src={Imgprontuario} alt="" width={31} />
-                        <a href="">Prontuário</a>
+                        <a href="" onClick={() => {navigate('/prontuario-medico')}} >Prontuário</a>
 
-                    </div><div className="menu-column-prof">
+                    </div>
+                    
+                    {/* <div className="menu-column-prof">
                         <img src={Imgconsultas} alt="" width={31} />
                         <a href="/agendarconsulta">Consultas</a>
-                    </div>
+                    </div> */}
 
                     <div className="menu-column-prof">
                         <img src={Imgexames} alt="" width={31} />

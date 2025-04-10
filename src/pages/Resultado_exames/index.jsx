@@ -3,12 +3,13 @@ import "./resultadoexames.css";
 import Resultadoexame from "../../assets/images/icon-tela-resultado-exame.svg";
 import Menulateral from "../../components/Menu_lateral";
 import Button from "../../components/Navbar";
+import Barra_resultado_exame from "../../components/Barra_resultado_exame";
+import NavbarLogada from "../../components/Navbar_logada";
 
 export default function ResultadoExames() {
   const exames = [
     {
       titulo: "HEMOGRAMA",
-      prontuario: "21830",
       unidade: "",
       data: "25/01/2025",
       requerente: "José Abravanel",
@@ -18,7 +19,6 @@ export default function ResultadoExames() {
     },
     {
       titulo: "BIOQUÍMICOS",
-      prontuario: "21830",
       unidade: "",
       data: "28/01/2025",
       requerente: "José Abravanel",
@@ -28,7 +28,6 @@ export default function ResultadoExames() {
     },
     {
       titulo: "RAIO-X TÓRAX",
-      prontuario: "21830",
       unidade: "",
       data: "30/01/2025",
       requerente: "Sylas Brennand",
@@ -40,11 +39,11 @@ export default function ResultadoExames() {
 
   return (
     <>
-      <Button />
+      <NavbarLogada />
       <Menulateral />
-      {/* <Barra /> */}
+      <Barra_resultado_exame/>
       <div className="resultado-container">
-        <main className="conteudo">
+        <main className="resultado-content">
           <section className="resultados">
             {exames.map((exame, index) => (
               <div className="resultado" key={index}>
@@ -53,9 +52,6 @@ export default function ResultadoExames() {
                 </div>
                 <div className="titulo-detalhes">
                   <h3>{exame.titulo}</h3>
-                  <ul>
-                    <li>Prontuário: {exame.prontuario}</li>
-                  </ul>
                 </div>
 
                 <div className="detalhes">
@@ -79,7 +75,6 @@ export default function ResultadoExames() {
                   </p>
                   {exame.documentos.map((doc, docIndex) => (
                     <button key={docIndex}>
-                      {/* <NotebookText size={20} color="#fff" /> */}
                       {doc}
                     </button>
                   ))}

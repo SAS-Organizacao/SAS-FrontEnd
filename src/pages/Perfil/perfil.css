@@ -1,21 +1,33 @@
-.perfil {
-    /* background-color: pink; */
+.perfil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 107.6vh;
+    background-image: linear-gradient(to bottom right, #fff, #1E94A2);
+}
+
+.perfil-content {
     width: 70%;
     height: 700px;
     position: absolute;
-    /* bottom: 100px; */
     top: 190px;
     left: 385px;
     padding: 50px;
 }
 
 .dados-pessoais {
-    background-color: #E2E2E2;
-    /* width: 800px; */
+    background-color: #D9D9D9;
     border-radius: 0 30px 30px 0;
-    padding: 20px; 
+    padding: 50px;
+    color: #000000d0;
     margin-bottom: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dados-pessoais:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
 .btn-dados {
@@ -34,10 +46,9 @@
 }
 
 .dados-p {
-    /* background-color: aqua; */
-    /* width: 750px; */
     display: flex;
     justify-content: space-between;
+
 }
 
 .dados-info {
@@ -49,10 +60,16 @@
 }
 
 .dados-acesso {
-    background-color: #E2E2E2;
-    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    background-color: #D9D9D9;
+    padding: 50px;
     border-radius: 30px 0 0 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+
+}
+.dados-acesso:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
 }
 
 .dados-a {
@@ -110,3 +127,40 @@
 .edit:hover {
     background-color: #005f6b;
 }
+
+.edit-input {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    outline: none;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+    .edit-input:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+  
+  .save-btn {
+    background-color: #004B54;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    grid-column: span 2;
+    justify-self: center;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  .save-btn:hover {
+    transform: translateY(-5px);
+    background-color: #026c7a;
+  }
