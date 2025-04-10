@@ -18,19 +18,16 @@
 .atend-paciente {
     display: flex;
     height: 140px;
-    /* background-color: blueviolet; */
     gap: 20px;
     padding: 20px;
     top: 50%;
     left: 50%;
     transform: (0%, 20%);
-    margin-left: 5px;
-    /* margin: 10px 10px */
+    margin-left: 5px;/
 }
 
 .container-anamnese {
-    background-color: #1E94A2 ;
-    /* width: 1000px; */
+    background-color: #1E94A2;
     height: 500px;
 }
 
@@ -46,7 +43,7 @@
 }
 
 .anamnese-data p {
-    padding: 0 0 15px 0 
+    padding: 0 0 15px 0
 }
 
 .queixa-paciente {
@@ -72,10 +69,7 @@
     color: #fff;
     border: none;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    cursor: pointer; 
-    /* gap: 15px; */
+    cursor: pointer;
     border-radius: 24px;
     padding: 10px 60px;
     transition: transform 0.5s ease, background-color 0.5s ease;
@@ -94,4 +88,3 @@
     transform: translateY(-2px);
     background-color: #1E94A2;
 }
-

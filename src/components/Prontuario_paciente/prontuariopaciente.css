@@ -1,0 +1,134 @@
+.container-prontuario-paciente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+
+.prontuario-content {
+    border: #1E94A2 1px solid;
+    width: 1200px;
+    height: -40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.dados-prontuario {
+    display: flex;
+    height: 140px;
+    gap: 20px;
+    padding: 20px 45px;
+    top: 50%;
+    left: 50%;
+    transform: (0%, 20%);
+    margin-left: 5px;
+}
+
+.container-prontuario {
+    background-color: #1E94A2;
+    height: 700px;
+}
+
+.prontuario-dados {
+    background-color: #fff;
+    margin: 30px 50px;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.prontuario-obs {
+    margin: 10px 10px;
+    padding: 0 0 20px 0;
+    border-bottom: #1E94A2 1px solid;
+}
+
+.prontuario-obs div {
+    display: flex;
+    align-items: center;
+}
+
+.prontuario-obs img {
+    margin: 0 10px 0 0;
+}
+
+.prontuario-obs h4 {
+    margin: 10px 0 10px 0;
+}
+
+.prontuario-atendimento {
+    margin: 10px 10px;
+    padding: 0 0 20px 0;
+    border-bottom: #1E94A2 1px solid;
+}
+
+.prontuario-atendimento h4 {
+    margin: 20px 0 10px 0;
+    border-bottom: #1E94A2;
+}
+
+.prontuario-atendimento div {
+    display: flex;
+    align-items: center;
+}
+
+.prontuario-atendimento img {
+    margin: 0 10px 0 0;
+}
+
+.exames-prontuario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 10px;
+    padding: 0 0 20px 0;
+    border-bottom: #1E94A2 1px solid;
+}
+
+.exames-prontuario h4 {
+    margin: 20px 0 10px 0;
+    border-bottom: #1E94A2;
+}
+
+.exames-prontuario p {
+    padding-left: ;
+}
+
+.tipo-exames {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tipo-exames div {
+    display: flex;
+    gap: 10px;
+}
+
+.tipo-exames img {
+    width: 20px;
+    height: 20px;
+}
+
+.info-exames ul {
+    padding: 5px 50px;
+}
+
+.status-disponivel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: green;
+}
+
+.status-indisponivel {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: red;
+}

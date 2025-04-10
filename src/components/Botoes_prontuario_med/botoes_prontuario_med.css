@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,13 +8,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
     top: 50%;
     left: 50%;
     transform: translate(74%, 60%);
 }
 
-.btn-atendimento{
+.btn-atendimento {
     background-color: #E2E2E2;
     width: 500px;
     height: 150px;
@@ -26,7 +26,7 @@
     margin-bottom: 20px;
 }
 
-.btn-exames{
+.btn-exames {
     background-color: #E2E2E2;
     width: 500px;
     height: 150px;
@@ -38,7 +38,7 @@
     margin-bottom: 20px;
 }
 
-.btn-documentos{
+.btn-documentos {
     background-color: #E2E2E2;
     width: 500px;
     height: 150px;
@@ -48,4 +48,3 @@
     border-radius: 40px 0 0 40px;
     flex-direction: column;
 }
-

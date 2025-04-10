@@ -35,6 +35,7 @@ import Novo_exame from "./components/Novo_exame";
 import Atendimento from "./components/Atendimento";
 import Botoes_prontuario_med from "./components/Botoes_prontuario_med";
 import Documentos from "./components/Documentos";
+import Prontuario_paciente from "./components/Prontuario_paciente";
 
 
 function App() {
@@ -95,6 +96,8 @@ function App() {
         <Route path='/historicoconsultas' element={<Histórico_consultas/>} ></Route>
         <Route path='/agendar_exames' element={<Agendar_exames/>} ></Route>
         <Route path='/botao-prontuario-med' element={<Botoes_prontuario_med/>} ></Route>
+        <Route path='/prontuario-paciente' element={<Prontuario_paciente/>} ></Route>
+        Prontuario_paciente
       </Routes>
     </BrowserRouter>
   );

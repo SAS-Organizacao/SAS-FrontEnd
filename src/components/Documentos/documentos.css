@@ -46,7 +46,7 @@
     left: 500px;
 }
 
-.card-documents h4{
+.card-documents h4 {
     text-align: center;
     margin-bottom: 10px;
 }
@@ -83,7 +83,6 @@
 
 .especialidade-documents {
     font-size: 16px;
-    /* color: #333; */
 }
 
 .medico-documents {

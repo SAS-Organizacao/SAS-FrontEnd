@@ -39,13 +39,13 @@ const Consultas = () => {
 
           <div className="horario-container">
             <div className="data-hora-consulta">
-            <h3>Escolha uma data:</h3>
-                <input
-                    className="input-date"
-                    type="date"
-                    value={selectedDate}
-                    onChange={handleDateChange}
-                />
+              <h3>Escolha uma data:</h3>
+              <input
+                className="input-date"
+                type="date"
+                value={selectedDate}
+                onChange={handleDateChange}
+              />
             </div>
             <h3 id="horarios-subtitulo">Horários disponíveis:</h3>
             <div className="horarios-disponiveis">
@@ -65,9 +65,8 @@ const Consultas = () => {
               ].map((time) => (
                 <button
                   key={time}
-                  className={`horario-button ${
-                    selectedTime === time ? "selected" : ""
-                  }`}
+                  className={`horario-button ${selectedTime === time ? "selected" : ""
+                    }`}
                   onClick={() => handleTimeClick(time)}
                 >
                   {time}

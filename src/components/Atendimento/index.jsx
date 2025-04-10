@@ -14,9 +14,9 @@ export default function Atendimento() {
                         </div>
                         <div className='paciente-info'>
                             <h3>Judite Cunha Gomes</h3>
-                            <p>Idade:</p>
-                            <p>Primeira consulta em:</p>
-                            <p>Tipo sanguíneo:</p>
+                            <p>Idade: 75 anos</p>
+                            <p>Primeira consulta em: 17/02/2024 </p>
+                            <p>Tipo sanguíneo: O-</p>
                         </div>
 
                     </div>

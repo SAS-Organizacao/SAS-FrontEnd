@@ -31,25 +31,25 @@ export default function Documentos() {
     return (
         <>
             <div className='container-documentos'>
-            <div className='documentos-content'>
-                <button id='btn-novo-documento'>
-                    <p>Adicionar Documento</p>
-                </button>
-                <div className='documento-med-content'>
-                    <h4>Histórico de Documentos</h4>
-                </div>
-            </div>
-            <div className="documentos-cards">
-                {documentos.map((documentos, index) => (
-                    <div className="card-documents">
-                        <h4>{documentos.tipo}</h4>
-                        <p className="data-document"><img src={Iconcalendario} alt="" /> {documentos.data}</p>
-                        <p className="especialidade-document"><img src={Iconespecialidade} alt="" /> {documentos.especialidade}</p>
-                        <p className="medico-document"><img src={Iconmedico} alt="" />{documentos.medico}</p>
-                        <div className='btn-document'><button>Visualizar</button></div>
+                <div className='documentos-content'>
+                    <button id='btn-novo-documento'>
+                        <p>Adicionar Documento</p>
+                    </button>
+                    <div className='documento-med-content'>
+                        <h4>Histórico de Documentos</h4>
                     </div>
-                ))}
-            </div>
+                </div>
+                <div className="documentos-cards">
+                    {documentos.map((documentos, index) => (
+                        <div className="card-documents">
+                            <h4>{documentos.tipo}</h4>
+                            <p className="data-document"><img src={Iconcalendario} alt="" /> {documentos.data}</p>
+                            <p className="especialidade-document"><img src={Iconespecialidade} alt="" /> {documentos.especialidade}</p>
+                            <p className="medico-document"><img src={Iconmedico} alt="" />{documentos.medico}</p>
+                            <div className='btn-document'><button>Visualizar</button></div>
+                        </div>
+                    ))}
+                </div>
             </div>
         </>
     )
