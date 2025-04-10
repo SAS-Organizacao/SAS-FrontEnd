@@ -25,7 +25,7 @@ export default function Menulateral() {
 
                     <div className="menu-column">
                         <img src={Imgprontuario} alt="" width={31} />
-                        <a href="">Prontuário</a>
+                        <a href="" onClick={() => {navigation('/')}}>Prontuário</a>
 
                     </div><div className="menu-column">
                         <img src={Imgconsultas} alt="" width={31} />

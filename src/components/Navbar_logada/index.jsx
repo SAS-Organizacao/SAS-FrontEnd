@@ -1,7 +1,7 @@
 import Logo from "../../assets/images/logo-sas.svg"
 import { useNavigate } from "react-router";
 import '../Navbar_logada/navbar_logada.css'
-import ImgLogado from "../../assets/images/icon-info-prontuario.svg"
+import ImgLogado from "../../assets/img-logada/icon-info-prontuario.jpeg"
 import Logoicon from "../../assets/images/logo-sas-png.png"
 
 
@@ -24,7 +24,7 @@ export default function NavbarLogada() {
             </div>
 
             <div className="img-logado">
-                <img className={ImgLogado} src={ImgLogado} alt=""/>
+                <img src={ImgLogado} alt="img-logada"/>
             </div>
         </div>
     )

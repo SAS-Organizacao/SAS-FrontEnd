@@ -1,15 +1,21 @@
 .container-area-profissional {
-    position: relative;
-    left: 450px;
-    top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(13%, 5%);
 }
 
 .agendamentos-container {
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
 }
 
 .tabela-agendamentos {
-    max-height: 300px;
+    max-height: 500px;
     overflow-y: auto;
     border: 1px solid #1E94A2;
     border-radius: 8px;
@@ -24,8 +30,14 @@
     padding: 1rem 1.5rem;
     border-bottom: 1px solid #f0f0f0;
     background-color: #fff;
-    transition: background-color 0.2s;
 }
+
+.linha p {
+    cursor: pointer;
+    color: #000000d0;
+}
+
+
 
 .linha:last-child {
     border-bottom: none;
@@ -40,13 +52,12 @@
 }
 
 .coluna {
-    flex: 1;
     display: flex;
     align-items: center;
 }
 
 .paciente {
-    flex: 2;
+    flex: 1;
     font-weight: 500;
 }
 
@@ -86,12 +97,15 @@
     padding: 20px;
 }
 
-.container-atend {
-    width: 500px;
+.container-atendimento-medico {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
 }
 
 .tabela-atendimentos {
-    max-height: 300px;
+    max-height: 500px;
     overflow-y: auto;
     border: 1px solid #1E94A2;
     border-radius: 8px;

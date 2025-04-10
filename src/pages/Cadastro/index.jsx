@@ -23,7 +23,7 @@ export default function Cadastro() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    console.log({ nome, cpf, email, senha, confirme_Senha });
+    console.log({ nome, cpf, email, senha });
 
     await api
       .post("/paciente/create", {
@@ -61,7 +61,7 @@ export default function Cadastro() {
   //       console.error("Nenhuma resposta recebida");
   //     }
   //   }
-  }
+   }
 
   return (
     <>
